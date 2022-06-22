@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.material-icons {
+  color: currentcolor;
+
+  &[data-size="xlarge"] {
+    font-size: 32px;
+  }
+
+  &[data-size="large"] {
+    font-size: 28px;
+  }
+
+  &[data-size="medium"] {
+    font-size: 24px;
+  }
+
+  &[data-size="small"] {
+    font-size: 20px;
+  }
+
+  &[data-size="xsmall"] {
+    font-size: 16px;
+  }
+
+}
+
+@keyframes skeleton {
+  100% {
+    transform: translateX(100%);
+  }
+}

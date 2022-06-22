@@ -1,0 +1,32 @@
+{
+  "name": "@pisagor/css",
+  "version": "0.1.0",
+  "description": "Normalize makes browsers render all elements more consistently and in line with modern standards.",
+  "keywords": [
+    "pisagor",
+    "react",
+    "normalize",
+    "gridview"
+  ],
+  "homepage": "https://github.com/tingoon/pisagor/packages/css/#readme",
+  "bugs": "https://github.com/tingoon/pisagor/issues",
+  "license": "MIT",
+  "author": "Tingoon",
+  "maintainers": [
+    "Aras Ekinci"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tingoon/pisagor.git",
+    "directory": "packages/css"
+  },
+  "scripts": {
+    "build": "gulp build"
+  },
+  "private": false,
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0"
+  }
+}

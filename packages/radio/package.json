@@ -1,0 +1,34 @@
+{
+  "name": "@pisagor/radio",
+  "version": "0.1.0",
+  "description": "A radio input allows people to select only one option from a number of choices. Radio is generally displayed in a radio group.",
+  "keywords": [
+    "pisagor",
+    "react",
+    "radio"
+  ],
+  "homepage": "https://github.com/tingoon/pisagor/packages/button/#readme",
+  "bugs": "https://github.com/tingoon/pisagor/issues",
+  "license": "MIT",
+  "author": "Tingoon",
+  "maintainers": [
+    "Aras Ekinci"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tingoon/pisagor.git",
+    "directory": "packages/radio"
+  },
+  "scripts": {
+    "build:esm": "tsc --module es2015 --outDir dist/esm",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build": "yarn build:esm && yarn build:cjs"
+  },
+  "private": false,
+  "dependencies": {
+    "begonya": "^0.2.3"
+  }
+}

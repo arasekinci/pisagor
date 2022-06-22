@@ -1,0 +1,34 @@
+{
+  "name": "@pisagor/button",
+  "version": "0.1.0",
+  "description": "A button triggers an event or action. They let users know what will happen next.",
+  "keywords": [
+    "pisagor",
+    "react",
+    "button"
+  ],
+  "homepage": "https://github.com/tingoon/pisagor/packages/button/#readme",
+  "bugs": "https://github.com/tingoon/pisagor/issues",
+  "license": "MIT",
+  "author": "Tingoon",
+  "maintainers": [
+    "Aras Ekinci"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tingoon/pisagor.git",
+    "directory": "packages/button"
+  },
+  "scripts": {
+    "build:esm": "tsc --module es2015 --outDir dist/esm",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build": "yarn build:esm && yarn build:cjs"
+  },
+  "private": false,
+  "dependencies": {
+    "begonya": "^0.2.3"
+  }
+}
