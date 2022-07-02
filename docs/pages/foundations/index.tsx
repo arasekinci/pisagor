@@ -2,26 +2,9 @@ import type { NextPage } from 'next'
 import Page, { PageHeader } from '@pisagor/page'
 import { Row, Column } from '@pisagor/gridview'
 
+import { foundations } from '@/constants/definitions'
 import Card from '@/components/card'
 import Layout from '@/layouts/main'
-
-const foundations = [
-  [
-    'colors',
-    'Colors',
-    'Color distinguishes our brand and helps us create consistent experiences across products.',
-  ],
-  [
-    'gridview',
-    'Gridview',
-    'The grid is the foundation for positioning elements onscreen. Designing to the grid helps create seamless, easy to follow experiences.',
-  ],
-  [
-    'typography',
-    'Typography',
-    'Typography is our system of fonts. Each font conveys the appropriate sentiment to assist our users through each stage of their journey.',
-  ],
-]
 
 const Foundations: NextPage = () => {
   return (
@@ -35,14 +18,14 @@ const Foundations: NextPage = () => {
           </p>
         </PageHeader>
         <Row>
-          {foundations.map(([slug, title, description]) => (
-            <Column key={slug} size={6}>
+          {Object.values(foundations).map((foundation) => (
+            <Column key={foundation.key} size={6}>
               <Card
                 type="foundation"
-                href={`/foundations/${slug}`}
-                title={title}
+                href={`/foundations/${foundation.key}`}
+                title={foundation.title}
               >
-                <p>{description}</p>
+                <p>{foundation.description}</p>
               </Card>
             </Column>
           ))}

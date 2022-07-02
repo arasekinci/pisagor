@@ -1,0 +1,6 @@
+{
+  "name": "@pisagor/core/colors",
+  "types": "../dist/@types/colors.d.ts",
+  "main": "../dist/cjs/colors.js",
+  "module": "../dist/esm/colors.js"
+}

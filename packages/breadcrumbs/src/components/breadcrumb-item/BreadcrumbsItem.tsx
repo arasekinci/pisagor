@@ -1,19 +1,27 @@
+import { cx } from '@emotion/css'
+import { useTheme } from '@pisagor/core'
+import Anchor from '@pisagor/anchor'
+
 import type { BreadcrumbsItemProps } from './BreadcrumbsItem.types'
-import * as Styles from './BreadcrumbsItem.styles'
+import * as styles from './BreadcrumbsItem.styles'
 
 export const BreadcrumbsItem: React.FunctionComponent<BreadcrumbsItemProps> = ({
+  children,
+  className,
   iconAfter,
   iconBefore,
-  children,
+  testId,
   ...rest
 }) => {
+  const theme = useTheme()
+
   return (
-    <Styles.Root>
-      <Styles.Anchor {...rest}>
+    <li className={cx(styles.root, className)} data-testid={testId}>
+      <Anchor className={styles.anchor(theme)} {...rest}>
         {iconBefore}
-        {children && <Styles.Text>{children}</Styles.Text>}
+        {children && <span className={styles.text}>{children}</span>}
         {iconAfter}
-      </Styles.Anchor>
-    </Styles.Root>
+      </Anchor>
+    </li>
   )
 }

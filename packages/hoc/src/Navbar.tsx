@@ -12,6 +12,8 @@ import NavbarBase, {
 
 import type { NavbarProps } from './Navbar.types'
 
+export type { NavbarProps }
+
 const Navbar: React.FunctionComponent<NavbarProps> = ({
   appSwitcher,
   create,
@@ -43,7 +45,5 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({
     />
   )
 }
-
-export type { NavbarProps }
 
 export default Navbar

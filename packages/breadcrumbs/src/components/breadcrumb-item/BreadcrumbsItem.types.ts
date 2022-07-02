@@ -1,7 +1,7 @@
 import type { ReactElement } from 'react'
-import type { LinkProps } from '@pisagor/link'
+import type { AnchorProps } from '@pisagor/anchor'
 
-export interface BreadcrumbsItemProps extends LinkProps {
+export interface BreadcrumbsItemProps extends AnchorProps {
   /**
    * The prop description will be added here.
    */

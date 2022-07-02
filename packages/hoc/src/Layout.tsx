@@ -11,6 +11,8 @@ import LayoutBase, {
 
 import type { LayoutProps } from './Layout.types'
 
+export type { LayoutProps }
+
 const Layout: React.FunctionComponent<LayoutProps> = ({
   banner,
   content,
@@ -37,7 +39,5 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
     </LayoutBase>
   )
 }
-
-export type { LayoutProps }
 
 export default Layout

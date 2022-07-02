@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { colors } from '@pisagor/theme'
+import { colors } from '@pisagor/core'
 
 import type { LeftSidebarPosition } from './LeftSidebar.types'
 

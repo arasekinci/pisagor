@@ -1,15 +1,17 @@
 import type { NextPage } from 'next'
+import BreadcrumbsWithProps from '@pisagor/hoc/breadcrumbs'
 import Breadcrumbs, { BreadcrumbsItem } from '@pisagor/breadcrumbs'
 import Icon from '@pisagor/icon'
 
+import { components } from '@/constants/definitions'
 import Example from '@/components/example'
 import DocumentLayout from '@/layouts/document'
 
 const BreadcrumbsPage: NextPage = () => {
   return (
     <DocumentLayout
-      title="Breadcrumbs"
-      description="A breadcrumbs are a navigation system used to show a user's location in a site or app."
+      title={components.breadcrumbs.title}
+      description={components.breadcrumbs.description}
     >
       <h4>Default</h4>
       <Example>
@@ -18,6 +20,23 @@ const BreadcrumbsPage: NextPage = () => {
           <BreadcrumbsItem href="#">Documents</BreadcrumbsItem>
           <BreadcrumbsItem href="#">Components</BreadcrumbsItem>
         </Breadcrumbs>
+        <br />
+        <BreadcrumbsWithProps
+          items={[
+            {
+              href: '#',
+              children: 'Home',
+            },
+            {
+              href: '#',
+              children: 'Documents',
+            },
+            {
+              href: '#',
+              children: 'Components',
+            },
+          ]}
+        />
       </Example>
       <h4>Separator</h4>
       <Example>

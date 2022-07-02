@@ -1,14 +1,44 @@
 import React from 'react'
+import { cx } from '@emotion/css'
 
 import type { ButtonProps } from './Button.types'
+import * as styles from './Button.styles'
 
 const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
-  { children, ...rest },
+  {
+    appearance = 'default',
+    children,
+    className,
+    iconAfter,
+    iconBefore,
+    size = 'medium',
+    testId,
+    ...rest
+  },
   ref
-): JSX.Element => {
+) => {
+  const classNames = cx(
+    styles.root,
+    styles.appearance[appearance],
+    styles.size[size],
+    className
+  )
+
   return (
-    <button {...rest} ref={ref}>
-      {children}
+    <button className={classNames} ref={ref} data-testid={testId} {...rest}>
+      {React.isValidElement(iconBefore)
+        ? React.cloneElement(iconBefore, {
+            className: 'button-icon-before',
+            size: (iconBefore && iconBefore.props.size) || 'small',
+          })
+        : null}
+      {children && <span className="button-text">{children}</span>}
+      {React.isValidElement(iconAfter)
+        ? React.cloneElement(iconAfter, {
+            className: 'button-icon-after',
+            size: (iconAfter && iconAfter.props.size) || 'small',
+          })
+        : null}
     </button>
   )
 }

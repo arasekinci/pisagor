@@ -1,0 +1,31 @@
+{
+  "name": "@pisagor/core",
+  "version": "0.1.0",
+  "description": "The Pisagor theme framework.",
+  "keywords": [
+    "pisagor",
+    "react",
+    "core"
+  ],
+  "homepage": "https://github.com/tingoon/pisagor/packages/core/#readme",
+  "bugs": "https://github.com/tingoon/pisagor/issues",
+  "license": "MIT",
+  "author": "Tingoon",
+  "maintainers": [
+    "Aras Ekinci"
+  ],
+  "types": "dist/@types/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tingoon/pisagor.git",
+    "directory": "packages/core"
+  },
+  "scripts": {
+    "build:esm": "tsc --module es2015 --outDir dist/esm",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build": "yarn build:esm && yarn build:cjs"
+  },
+  "private": false
+}

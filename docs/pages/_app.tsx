@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import type { AppProps } from 'next/app'
 import Router from 'next/router'
 import NProgress from 'nprogress'
-import { ThemeProvider } from '@pisagor/theme'
+import { PisagorProvider, themes } from '@pisagor/core'
 import '@pisagor/css/normalize'
 import '@pisagor/css/gridview'
 
@@ -28,9 +28,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [])
 
   return (
-    <ThemeProvider>
+    <PisagorProvider theme={themes.light}>
       <Component {...pageProps} />
-    </ThemeProvider>
+    </PisagorProvider>
   )
 }
 
