@@ -1,10 +1,5 @@
 export const components = {
   // [
-  //   'alert',
-  //   'Alert',
-  //   'A section message is used to alert users to a particular section of the screen.',
-  // ],
-  // [
   //   'accordion',
   //   'Accordion',
   //   'Tabs are used to organize content by grouping similar information on the same page.',
@@ -16,12 +11,54 @@ export const components = {
   //   description:
   //     'A highly composable side navigation component that supports nested views.',
   // },
+  alert: {
+    key: 'alert',
+    pathname: '/components/alert',
+    title: 'Alert',
+    description:
+      'A section message is used to alert users to a particular section of the screen.',
+  },
+  badge: {
+    key: 'badge',
+    pathname: '/components/badge',
+    title: 'Badge',
+    description:
+      'A badge is a visual indicator for numeric values such as tallies and scores.',
+  },
+  blanket: {
+    key: 'blanket',
+    pathname: '/components/blanket',
+    title: 'Blanket',
+    description:
+      'A blanket covers the underlying UI for a layered component, such as a modal dialog or a tooltip.',
+  },
   breadcrumbs: {
     key: 'breadcrumbs',
     pathname: '/components/breadcrumbs',
     title: 'Breadcrumbs',
     description:
       "Breadcrumbs are a navigation system used to show a user's location in a site or app.",
+  },
+  button: {
+    key: 'button',
+    pathname: '/components/button',
+    title: 'Button',
+    description:
+      'A button triggers an event or action. They let users know what will happen next.',
+  },
+  checkbox: {
+    key: 'checkbox',
+    pathname: '/components/checkbox',
+    title: 'Checkbox',
+    description:
+      'A checkbox is an input control that allows a user to select one or more options from a number of choices.',
+  },
+  drawer: {
+    key: 'drawer',
+    pathname: '/components/drawer',
+    title: 'Drawer',
+    description:
+      'A drawer is a panel that slides in from the left side of the screen.',
   },
   form: {
     key: 'form',
@@ -43,23 +80,12 @@ export const components = {
     description:
       'A text area lets users enter long form text which spans over multiple lines.',
   },
-  button: {
-    key: 'button',
-    pathname: '/components/button',
-    title: 'Button',
-    description:
-      'A button triggers an event or action. They let users know what will happen next.',
-  },
   // [
   //   'cards',
   //   'Cards',
   //   'A cards contain content and actions about a single subject.',
   // ],
   // [
-  //   'checkbox',
-  //   'Checkbox',
-  //   'A checkbox is an input control that allows a user to select one or more options from a number of choices.',
-  // ],
   // [
   //   'divider',
   //   'Divider',

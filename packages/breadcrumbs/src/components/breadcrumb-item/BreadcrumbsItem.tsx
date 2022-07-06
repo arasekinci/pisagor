@@ -1,5 +1,4 @@
-import { cx } from '@emotion/css'
-import { useTheme } from '@pisagor/core'
+import { classnames } from 'begonya/functions'
 import Anchor from '@pisagor/anchor'
 
 import type { BreadcrumbsItemProps } from './BreadcrumbsItem.types'
@@ -13,11 +12,9 @@ export const BreadcrumbsItem: React.FunctionComponent<BreadcrumbsItemProps> = ({
   testId,
   ...rest
 }) => {
-  const theme = useTheme()
-
   return (
-    <li className={cx(styles.root, className)} data-testid={testId}>
-      <Anchor className={styles.anchor(theme)} {...rest}>
+    <li className={classnames(styles.root, className)} data-testid={testId}>
+      <Anchor className={styles.anchor} {...rest}>
         {iconBefore}
         {children && <span className={styles.text}>{children}</span>}
         {iconAfter}

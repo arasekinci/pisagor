@@ -1,5 +1,4 @@
 import { css } from '@emotion/css'
-import { colors } from '@pisagor/core'
 
 export const root = css({
   alignItems: 'baseline',
@@ -25,28 +24,88 @@ export const root = css({
 
 export const appearance = {
   default: css({
-    color: colors.N500,
-    backgroundColor: colors.N30,
+    color: 'var(--button-default-color)',
+    backgroundColor: 'var(--button-default-background)',
+
+    ':hover': {
+      color: 'var(--button-default-color-hover)',
+      backgroundColor: 'var(--button-default-background-hover)',
+    },
+
+    ':active': {
+      color: 'var(--button-default-color-active)',
+      backgroundColor: 'var(--button-default-background-active)',
+    },
   }),
   error: css({
-    color: colors.N0,
-    backgroundColor: colors.R400,
+    color: 'var(--button-error-color)',
+    backgroundColor: 'var(--button-error-background)',
+
+    ':hover': {
+      color: 'var(--button-error-color-hover)',
+      backgroundColor: 'var(--button-error-background-hover)',
+    },
+
+    ':active': {
+      color: 'var(--button-error-color-active)',
+      backgroundColor: 'var(--button-error-background-active)',
+    },
   }),
   help: css({
-    color: colors.N0,
-    backgroundColor: colors.P400,
+    color: 'var(--button-help-color)',
+    backgroundColor: 'var(--button-help-background)',
+
+    ':hover': {
+      color: 'var(--button-help-color-hover)',
+      backgroundColor: 'var(--button-help-background-hover)',
+    },
+
+    ':active': {
+      color: 'var(--button-help-color-active)',
+      backgroundColor: 'var(--button-help-background-active)',
+    },
   }),
   info: css({
-    color: colors.N0,
-    backgroundColor: colors.B400,
+    color: 'var(--button-info-color)',
+    backgroundColor: 'var(--button-info-background)',
+
+    ':hover': {
+      color: 'var(--button-info-color-hover)',
+      backgroundColor: 'var(--button-info-background-hover)',
+    },
+
+    ':active': {
+      color: 'var(--button-info-color-active)',
+      backgroundColor: 'var(--button-info-background-active)',
+    },
   }),
   success: css({
-    color: colors.N0,
-    backgroundColor: colors.G400,
+    color: 'var(--button-success-color)',
+    backgroundColor: 'var(--button-success-background)',
+
+    ':hover': {
+      color: 'var(--button-success-color-hover)',
+      backgroundColor: 'var(--button-success-background-hover)',
+    },
+
+    ':active': {
+      color: 'var(--button-success-color-active)',
+      backgroundColor: 'var(--button-success-background-active)',
+    },
   }),
   warning: css({
-    color: colors.N0,
-    backgroundColor: colors.Y400,
+    color: 'var(--button-warning-color)',
+    backgroundColor: 'var(--button-warning-background)',
+
+    ':hover': {
+      color: 'var(--button-warning-color-hover)',
+      backgroundColor: 'var(--button-warning-background-hover)',
+    },
+
+    ':active': {
+      color: 'var(--button-warning-color-active)',
+      backgroundColor: 'var(--button-warning-background-active)',
+    },
   }),
 }
 
@@ -73,14 +132,3 @@ export const size = {
     padding: '0 8px',
   }),
 }
-
-// type CSS<P = any> = (
-//   props?: Partial<P> | null,
-//   style?: React.CSSProperties | undefined
-// ) => string
-
-// export const common: CSS = (props, style) =>
-//   css({
-//     color: 'pink',
-//     ...style,
-//   })

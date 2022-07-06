@@ -27,8 +27,5 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "build": "yarn build:esm && yarn build:cjs"
   },
-  "private": false,
-  "dependencies": {
-    "begonya": "^0.2.3"
-  }
+  "private": false
 }

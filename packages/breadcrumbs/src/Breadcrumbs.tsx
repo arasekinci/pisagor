@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
-import { cx } from '@emotion/css'
-import { useTheme } from '@pisagor/core'
+import { classnames } from 'begonya/functions'
 
 import type { BreadcrumbsProps } from './Breadcrumbs.types'
 import * as styles from './Breadcrumbs.styles'
@@ -13,14 +12,14 @@ const Breadcrumbs: React.FunctionComponent<BreadcrumbsProps> = ({
   testId,
   ...rest
 }) => {
-  const theme = useTheme()
+  const classNames = classnames(styles.nav, className)
 
   return (
     <nav
-      className={cx(styles.nav(theme), className)}
-      data-testid={testId}
+      className={classNames}
       aria-label={label}
       tabIndex={-1}
+      data-testid={testId}
       {...rest}
     >
       <ol className={styles.list}>

@@ -50,19 +50,37 @@ const BreadcrumbsPage: NextPage = () => {
       <h4>Icon before</h4>
       <Example>
         <Breadcrumbs>
-          <BreadcrumbsItem href="/#" iconBefore={<Icon name="home" />} />
-          <BreadcrumbsItem href="/#" iconBefore={<Icon name="whatshot" />} />
-          <BreadcrumbsItem href="/#" iconBefore={<Icon name="grain" />} />
+          <BreadcrumbsItem
+            href="/#"
+            iconBefore={<Icon name="home" size="small" />}
+          />
+          <BreadcrumbsItem
+            href="/#"
+            iconBefore={<Icon name="whatshot" size="small" />}
+          />
+          <BreadcrumbsItem
+            href="/#"
+            iconBefore={<Icon name="grain" size="small" />}
+          />
         </Breadcrumbs>
         <hr />
         <Breadcrumbs>
-          <BreadcrumbsItem href="/#" iconBefore={<Icon name="home" />}>
+          <BreadcrumbsItem
+            href="/#"
+            iconBefore={<Icon name="home" size="small" />}
+          >
             Home
           </BreadcrumbsItem>
-          <BreadcrumbsItem href="/#" iconBefore={<Icon name="whatshot" />}>
+          <BreadcrumbsItem
+            href="/#"
+            iconBefore={<Icon name="whatshot" size="small" />}
+          >
             Documents
           </BreadcrumbsItem>
-          <BreadcrumbsItem href="/#" iconBefore={<Icon name="grain" />}>
+          <BreadcrumbsItem
+            href="/#"
+            iconBefore={<Icon name="grain" size="small" />}
+          >
             Components
           </BreadcrumbsItem>
         </Breadcrumbs>
@@ -70,19 +88,37 @@ const BreadcrumbsPage: NextPage = () => {
       <h4>Icon after</h4>
       <Example>
         <Breadcrumbs>
-          <BreadcrumbsItem href="/#" iconAfter={<Icon name="home" />} />
-          <BreadcrumbsItem href="/#" iconAfter={<Icon name="whatshot" />} />
-          <BreadcrumbsItem href="/#" iconAfter={<Icon name="grain" />} />
+          <BreadcrumbsItem
+            href="/#"
+            iconAfter={<Icon name="home" size="small" />}
+          />
+          <BreadcrumbsItem
+            href="/#"
+            iconAfter={<Icon name="whatshot" size="small" />}
+          />
+          <BreadcrumbsItem
+            href="/#"
+            iconAfter={<Icon name="grain" size="small" />}
+          />
         </Breadcrumbs>
         <hr />
         <Breadcrumbs>
-          <BreadcrumbsItem href="/#" iconAfter={<Icon name="home" />}>
+          <BreadcrumbsItem
+            href="/#"
+            iconAfter={<Icon name="home" size="small" />}
+          >
             Home
           </BreadcrumbsItem>
-          <BreadcrumbsItem href="/#" iconAfter={<Icon name="whatshot" />}>
+          <BreadcrumbsItem
+            href="/#"
+            iconAfter={<Icon name="whatshot" size="small" />}
+          >
             Documents
           </BreadcrumbsItem>
-          <BreadcrumbsItem href="/#" iconAfter={<Icon name="grain" />}>
+          <BreadcrumbsItem
+            href="/#"
+            iconAfter={<Icon name="grain" size="small" />}
+          >
             Components
           </BreadcrumbsItem>
         </Breadcrumbs>

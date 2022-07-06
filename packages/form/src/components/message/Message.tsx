@@ -1,4 +1,4 @@
-import { cx } from '@emotion/css'
+import { classnames } from 'begonya/functions'
 import Icon from '@pisagor/icon'
 
 import type { MessageProps } from './Message.types'
@@ -11,7 +11,7 @@ export const Message: React.FunctionComponent<MessageProps> = ({
   testId,
   ...rest
 }) => {
-  const classNames = cx(styles.root, styles.types[type], className)
+  const classNames = classnames(styles.root, styles.types[type], className)
 
   const renderIcon = () => {
     switch (type) {

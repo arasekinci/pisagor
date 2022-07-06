@@ -15,6 +15,17 @@ const TextAreaPage: NextPage = () => {
       <Example>
         <TextArea />
       </Example>
+      <h3>State</h3>
+      <Example>
+        <TextArea label="Placeholder" placeholder="Input placeholder" />
+        <TextArea label="Disabled" disabled />
+      </Example>
+      <h3>Size</h3>
+      <Example>
+        <TextArea label="Large" size="large" />
+        <TextArea label="Medium" size="medium" />
+        <TextArea label="Small" size="small" />
+      </Example>
       <Example>
         <TextArea disabled />
       </Example>

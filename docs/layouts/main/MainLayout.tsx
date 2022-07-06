@@ -92,7 +92,6 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = ({
         navbar={navbar}
         // rightPanel={rightPanel}
         // rightSidebar={rightSidebar}
-        testId="layout"
       />
     </Fragment>
   )

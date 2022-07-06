@@ -1,5 +1,5 @@
 import React from 'react'
-import { cx } from '@emotion/css'
+import { classnames } from 'begonya/functions'
 
 import type { FormProps } from './Form.types'
 import * as styles from './Form.styles'
@@ -10,7 +10,7 @@ const Form: React.ForwardRefRenderFunction<HTMLFormElement, FormProps> = (
 ) => {
   return (
     <form
-      className={cx(styles.root, className)}
+      className={classnames(styles.root, className)}
       ref={ref}
       data-testid={testId}
       {...rest}

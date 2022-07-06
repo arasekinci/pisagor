@@ -12,7 +12,7 @@ export const Root = styled.div({
 export const Search = styled.div({
   position: 'relative',
 
-  '.material-icons': {
+  span: {
     position: 'absolute',
     top: 7,
     left: 8,

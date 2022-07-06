@@ -1,5 +1,5 @@
 import React from 'react'
-import { cx } from '@emotion/css'
+import { classnames } from 'begonya/functions'
 
 import type { ButtonProps } from './Button.types'
 import * as styles from './Button.styles'
@@ -17,7 +17,7 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
   },
   ref
 ) => {
-  const classNames = cx(
+  const classNames = classnames(
     styles.root,
     styles.appearance[appearance],
     styles.size[size],

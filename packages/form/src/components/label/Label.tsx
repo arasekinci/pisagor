@@ -1,4 +1,4 @@
-import { cx } from '@emotion/css'
+import { classnames } from 'begonya/functions'
 
 import type { LabelProps } from './Label.types'
 import * as styles from './Label.styles'
@@ -12,7 +12,7 @@ export const Label: React.FunctionComponent<LabelProps> = ({
 }) => {
   return (
     <label
-      className={cx(styles.root, className)}
+      className={classnames(styles.root, className)}
       data-testid={testId && `${testId}-label`}
       {...rest}
     >

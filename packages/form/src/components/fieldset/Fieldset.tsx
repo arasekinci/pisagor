@@ -3,9 +3,9 @@ import * as styles from './Fieldset.styles'
 
 export const Fieldset: React.FunctionComponent<FieldsetProps> = ({
   children,
-  testId,
   title,
   description,
+  testId,
   ...rest
 }) => {
   return (

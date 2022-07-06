@@ -18,6 +18,10 @@ export interface IconProps extends HTMLAttributes<HTMLSpanElement> {
    */
   name: string
   /**
+   * The prop description will be added here.
+   */
+  color?: string
+  /**
    * There are three icon sizes – small (16px), medium (24px), and large (32px). This pixel size refers to the canvas the icon sits on, not the size of the icon shape itself.
    */
   size?: IconSize

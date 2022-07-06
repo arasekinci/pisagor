@@ -1,0 +1,31 @@
+{
+  "name": "@pisagor/portal",
+  "version": "0.1.0",
+  "description": "Pisagor wrapper for rendering components in React portals",
+  "keywords": [
+    "pisagor",
+    "react",
+    "portal"
+  ],
+  "homepage": "https://github.com/tingoon/pisagor/packages/portal/#readme",
+  "bugs": "https://github.com/tingoon/pisagor/issues",
+  "license": "MIT",
+  "author": "Tingoon",
+  "maintainers": [
+    "Aras Ekinci"
+  ],
+  "types": "dist/@types/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tingoon/pisagor.git",
+    "directory": "packages/portal"
+  },
+  "scripts": {
+    "build:esm": "tsc --module es2015 --outDir dist/esm",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build": "yarn build:esm && yarn build:cjs"
+  },
+  "private": false
+}

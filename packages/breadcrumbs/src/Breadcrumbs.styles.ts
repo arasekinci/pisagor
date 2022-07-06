@@ -1,11 +1,8 @@
-import type { Theme } from '@pisagor/core'
 import { css } from '@emotion/css'
 
-export const nav = (theme: Theme) =>
-  css({
-    color: theme.breadcrumbs.color,
-    fontSize: '1rem',
-  })
+export const nav = css({
+  fontSize: '1rem',
+})
 
 export const list = css({
   display: 'flex',
@@ -16,6 +13,7 @@ export const list = css({
 })
 
 export const seperator = css({
+  color: 'var(--breadcrumbs-color)',
   minWidth: 20,
   fontSize: '1em',
   textAlign: 'center',
