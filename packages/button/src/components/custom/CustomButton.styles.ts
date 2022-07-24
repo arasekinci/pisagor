@@ -5,12 +5,11 @@ export const root = css({
   maxWidth: '100%',
   width: 'auto',
   border: '0',
-  cursor: 'pointer',
   display: 'flex',
+  cursor: 'pointer',
   alignItems: 'center',
   textDecoration: 'none',
   whiteSpace: 'nowrap',
-  borderRadius: 3,
   boxSizing: 'border-box',
   backgroundColor: 'transparent',
 })

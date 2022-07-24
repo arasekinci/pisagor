@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import BreadcrumbsWithProps from '@pisagor/hoc/breadcrumbs'
+import BreadcrumbsWithProps from '@pisagor/composed/breadcrumbs'
 import Breadcrumbs, { BreadcrumbsItem } from '@pisagor/breadcrumbs'
 import Icon from '@pisagor/icon'
 

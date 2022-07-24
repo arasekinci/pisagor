@@ -1,6 +1,0 @@
-{
-  "name": "@pisagor/hoc/breadcrumbs",
-  "types": "../dist/@types/Breadcrumbs.d.ts",
-  "main": "../dist/cjs/Breadcrumbs.js",
-  "module": "../dist/esm/Breadcrumbs.js"
-}

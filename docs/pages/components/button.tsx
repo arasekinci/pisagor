@@ -57,11 +57,6 @@ const ButtonPage: NextPage = () => {
         <CustomButton
           iconBefore={<Icon name="star" />}
           iconAfter={<Icon name="star" />}
-          overrides={{
-            root: {
-              fontSize: 14,
-            },
-          }}
         >
           Icon After
         </CustomButton>

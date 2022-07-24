@@ -13,7 +13,7 @@ import Navbar, {
   Search,
   Settings,
   SignIn,
-} from '@pisagor/navbar-next'
+} from '@pisagor/navbar'
 
 import { components } from '@/constants/definitions'
 import Example from '@/components/example'
@@ -32,8 +32,8 @@ const NavbarPage: NextPage = () => {
             <AppSwitcher />
             <Logo />
             <Navigation>
-              <NavigationItem>Item</NavigationItem>
-              <NavigationItem>Item</NavigationItem>
+              <NavigationItem isSelected>Your work</NavigationItem>
+              <NavigationItem>Issues</NavigationItem>
               <NavigationItem>Item</NavigationItem>
               <NavigationItem>Item</NavigationItem>
             </Navigation>

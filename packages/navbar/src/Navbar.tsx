@@ -1,43 +1,20 @@
+import { cx } from '@emotion/css'
+
 import type { NavbarProps } from './Navbar.types'
-import * as Styled from './Navbar.styles'
+import * as styles from './Navbar.styles'
 
 const Navbar: React.FunctionComponent<NavbarProps> = ({
-  renderAppSwitcher: AppSwitcher,
-  renderCreate: Create,
-  renderHelp: Help,
-  renderLogo: Logo,
-  renderMenu: Menu,
-  renderNotifications: Notifications,
-  renderProfile: Profile,
-  renderSearch: Search,
-  renderSettings: Settings,
-  renderSignIn: SignIn,
+  children,
+  className,
   testId,
   ...rest
 }) => {
+  const classNames = cx(styles.root, className)
+
   return (
-    <Styled.Root
-      role="banner"
-      data-testid={testId && `${testId}-header`}
-      {...rest}
-    >
-      <Styled.Navigation>
-        {AppSwitcher && <AppSwitcher />}
-        {Logo && <Logo />}
-        <Styled.Menu data-testid={testId && `${testId}-menu`}>
-          {Menu && <Menu />}
-          {Create && <Create />}
-        </Styled.Menu>
-      </Styled.Navigation>
-      <Styled.Actions data-testid={testId && `${testId}-actions`}>
-        {Search && <Search />}
-        {Notifications && <Notifications />}
-        {Help && <Help />}
-        {Settings && <Settings />}
-        {SignIn && <SignIn />}
-        {Profile && <Profile />}
-      </Styled.Actions>
-    </Styled.Root>
+    <header className={classNames} role="banner" data-testid={testId} {...rest}>
+      {children}
+    </header>
   )
 }
 

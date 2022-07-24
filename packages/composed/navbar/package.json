@@ -1,0 +1,6 @@
+{
+  "name": "@pisagor/composed/navbar",
+  "types": "../dist/@types/Navbar.d.ts",
+  "main": "../dist/cjs/Navbar.js",
+  "module": "../dist/esm/Navbar.js"
+}

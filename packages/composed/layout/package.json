@@ -1,0 +1,6 @@
+{
+  "name": "@pisagor/composed/layout",
+  "types": "../dist/@types/Layout.d.ts",
+  "main": "../dist/cjs/Layout.js",
+  "module": "../dist/esm/Layout.js"
+}

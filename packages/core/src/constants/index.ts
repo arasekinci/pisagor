@@ -13,4 +13,4 @@ export const LAYER_BLANKET = 500
 export const LAYER_MODAL = 510
 export const LAYER_FLAG = 600
 export const LAYER_SPOTLIGHT = 700
-export const LAYER_TOOLTIP = 700
+export const LAYER_TOOLTIP = 800

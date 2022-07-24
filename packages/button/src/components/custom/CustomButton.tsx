@@ -1,6 +1,6 @@
 import React from 'react'
 import { classnames } from 'begonya/functions'
-import { css, cx } from '@emotion/css'
+import type { IconProps } from '@pisagor/icon'
 
 import type { CustomButtonProps } from './CustomButton.types'
 import * as styles from './CustomButton.styles'
@@ -12,24 +12,32 @@ const CustomButton: React.ForwardRefRenderFunction<
   {
     children,
     className,
+    classNameList = {},
     iconAfter,
     iconBefore,
-    overrides = {},
     testId,
     type = 'button',
     ...rest
   },
   ref
 ) => {
-  const classNames = classnames(styles.root, css(overrides.root), className)
+  const classNames = classnames(styles.root, className)
 
-  const renderIcon = (icon?: React.ReactElement) => {
+  const renderIcon = (icon?: React.ReactElement<IconProps>) => {
     if (React.isValidElement(icon) && icon) {
-      const iconStyle = css(overrides.icon)
+      const classNames = classnames(icon.props.className, classNameList.icon)
 
       return React.cloneElement(icon, {
-        className: cx(iconStyle, icon.props.className),
+        className: classNames,
       })
+    }
+  }
+
+  const renderText = () => {
+    if (children) {
+      const classNames = classnames(styles.text, classNameList.text)
+
+      return <span className={classNames}>{children}</span>
     }
   }
 
@@ -43,9 +51,7 @@ const CustomButton: React.ForwardRefRenderFunction<
       {...rest}
     >
       {renderIcon(iconBefore)}
-      {children && (
-        <span className={cx(styles.text, css(overrides.text))}>{children}</span>
-      )}
+      {renderText()}
       {renderIcon(iconAfter)}
     </button>
   )

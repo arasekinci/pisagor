@@ -1,7 +1,7 @@
-import styled from '@emotion/styled'
+import { css } from '@emotion/css'
 import { N0, N30A, N40A, N600 } from '@pisagor/core/colors'
 
-export const Root = styled.header({
+export const root = css({
   position: 'relative',
   display: 'flex',
   flexShrink: 0,
@@ -22,41 +22,5 @@ export const Root = styled.header({
     left: 0,
     height: 4,
     background: `linear-gradient(180deg, ${N40A} 0, ${N40A} 1px, ${N30A} 1px, transparent 4px)`,
-  },
-})
-
-export const Navigation = styled.nav({
-  display: 'flex',
-  minWidth: 0,
-  height: 'inherit',
-  alignItems: 'center',
-  flexGrow: 1,
-
-  '& > *': {
-    flexShrink: 0,
-  },
-})
-
-export const Menu = styled.div({
-  display: 'flex',
-  height: '100%',
-  position: 'relative',
-  alignItems: 'stretch',
-  flexGrow: 0,
-
-  '& > *': {
-    margin: '0 4px',
-    flexShrink: 0,
-  },
-})
-
-export const Actions = styled.div({
-  display: 'flex',
-  flexGrow: 1,
-  alignItems: 'center',
-  justifyContent: 'flex-end',
-
-  '& > *': {
-    marginRight: 4,
   },
 })

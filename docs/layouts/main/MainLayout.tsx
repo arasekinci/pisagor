@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import Head from 'next/head'
 
-import Layout from '@pisagor/hoc/layout'
-import Navbar from '@pisagor/hoc/navbar'
+import Layout from '@pisagor/composed/layout'
+import Navbar from '@pisagor/composed/navbar'
 
 import type { MainLayoutProps } from './MainLayout.types'
 
@@ -68,7 +68,32 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = ({
   }
 
   const navbar = {
-    children: <Navbar testId="navbar" search={{ children: 'Result' }} />,
+    children: (
+      <Navbar
+        menu={[
+          {
+            children: 'Brand',
+          },
+          {
+            children: 'Foundations',
+          },
+          {
+            children: 'Content',
+          },
+          {
+            children: 'Components',
+          },
+          {
+            children: 'Patterns',
+          },
+          {
+            children: 'Resources',
+          },
+        ]}
+        search={{ children: 'Result' }}
+        testId="navbar"
+      />
+    ),
   }
 
   const rightSidebar = {

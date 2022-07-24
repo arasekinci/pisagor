@@ -1,6 +1,0 @@
-{
-  "name": "@pisagor/hoc/navbar",
-  "types": "../dist/@types/Navbar.d.ts",
-  "main": "../dist/cjs/Navbar.js",
-  "module": "../dist/esm/Navbar.js"
-}
