@@ -17,8 +17,8 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({
 }) => {
   return (
     <Styled.Root
-      data-testid={testId && `${testId}-header`}
       role="banner"
+      data-testid={testId && `${testId}-header`}
       {...rest}
     >
       <Styled.Navigation>

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { colors } from '@pisagor/core'
+import { N0, N30A, N40A, N600 } from '@pisagor/core/colors'
 
 export const Root = styled.header({
   position: 'relative',
@@ -9,10 +9,10 @@ export const Root = styled.header({
   justifyContent: 'space-between',
   paddingLeft: 12,
   paddingRight: 12,
-  color: colors.N600,
+  color: N600,
   height: 'var(--navbarHeight, 0px)',
   boxSizing: 'border-box',
-  backgroundColor: colors.N0,
+  backgroundColor: N0,
 
   '&::after': {
     position: 'absolute',
@@ -21,7 +21,7 @@ export const Root = styled.header({
     right: 0,
     left: 0,
     height: 4,
-    background: `linear-gradient(180deg, ${colors.N40A} 0, ${colors.N40A} 1px, ${colors.N30A} 1px, transparent 4px)`,
+    background: `linear-gradient(180deg, ${N40A} 0, ${N40A} 1px, ${N30A} 1px, transparent 4px)`,
   },
 })
 

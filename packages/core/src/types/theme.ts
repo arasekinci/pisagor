@@ -1,6 +1,3 @@
-import type { ReactNode } from 'react'
-import type { AnchorProps } from '@pisagor/anchor'
-
 type AlertAppearance = {
   background: string
 
@@ -29,11 +26,6 @@ type ButtonAppearance = {
   }
 }
 
-// type CheckboxState = {
-//   border: string
-//   background: string
-// }
-
 export type Theme = {
   alert: {
     color: string
@@ -56,14 +48,6 @@ export type Theme = {
   blanket: {
     background: string
   }
-  // checkbox: {
-  //   border: string
-  //   background: string
-  //   active: CheckboxState
-  //   checked: CheckboxState
-  //   disabled: CheckboxState
-  //   hover: CheckboxState
-  // }
   breadcrumbs: {
     color: string
 
@@ -79,22 +63,12 @@ export type Theme = {
     success: ButtonAppearance
     warning: ButtonAppearance
   }
-}
-
-export type PisagorContextValue = {
-  /**
-   * The prop description will be added here.
-   */
-  link?(props: AnchorProps): JSX.Element
-}
-
-export interface PisagorProviderProps extends PisagorContextValue {
-  /**
-   * The prop description will be added here.
-   */
-  theme: Theme
-  /**
-   * The prop description will be added here.
-   */
-  children: ReactNode
+  popup: {
+    background: string
+    boxShadow: string
+  }
+  tooltip: {
+    color: string
+    background: string
+  }
 }

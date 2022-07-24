@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Button from '@pisagor/button'
+import Button, { CustomButton } from '@pisagor/button'
 import Icon from '@pisagor/icon'
 
 import { components } from '@/constants/definitions'
@@ -51,6 +51,20 @@ const ButtonPage: NextPage = () => {
       <h4>Icon after</h4>
       <Example>
         <Button iconAfter={<Icon name="star" />}>Icon After</Button>
+      </Example>
+      <h3>Custom button</h3>
+      <Example>
+        <CustomButton
+          iconBefore={<Icon name="star" />}
+          iconAfter={<Icon name="star" />}
+          overrides={{
+            root: {
+              fontSize: 14,
+            },
+          }}
+        >
+          Icon After
+        </CustomButton>
       </Example>
     </DocumentLayout>
   )

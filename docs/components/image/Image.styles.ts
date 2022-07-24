@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { colors } from '@pisagor/core'
+import { N20, N40 } from '@pisagor/core/colors'
 
 export const Node = styled.img({
   minWidth: '100%',
@@ -34,7 +34,7 @@ export const Root = styled.div({
   boxSizing: 'border-box',
 
   '&.loading': {
-    backgroundColor: colors.N20,
+    backgroundColor: N20,
 
     '&:after': {
       content: '""',
@@ -43,7 +43,7 @@ export const Root = styled.div({
       width: '100%',
       height: '100%',
       transform: 'translateX(-100%)',
-      background: `linear-gradient(90deg, transparent, ${colors.N40}, transparent)`,
+      background: `linear-gradient(90deg, transparent, ${N40}, transparent)`,
       animation: 'skeleton 1s infinite',
     },
   },
@@ -53,7 +53,7 @@ export const Root = styled.div({
   },
 
   '&.broken-image': {
-    backgroundColor: colors.N20,
+    backgroundColor: N20,
     backgroundPosition: 'center center',
     backgroundImage: "url('/images/broken-image.svg')",
     backgroundRepeat: 'no-repeat',

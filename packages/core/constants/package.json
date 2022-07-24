@@ -1,6 +1,6 @@
 {
   "name": "@pisagor/core/constants",
-  "types": "../dist/@types/constants.d.ts",
-  "main": "../dist/cjs/constants.js",
-  "module": "../dist/esm/constants.js"
+  "types": "../dist/@types/constants/index.d.ts",
+  "main": "../dist/cjs/constants/index.js",
+  "module": "../dist/esm/constants/index.js"
 }

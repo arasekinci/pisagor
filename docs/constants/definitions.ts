@@ -1,22 +1,16 @@
 export const components = {
-  // [
-  //   'accordion',
-  //   'Accordion',
-  //   'Tabs are used to organize content by grouping similar information on the same page.',
-  // ],
-  // sidebar: {
-  //   key: 'sidebar',
-  //   pathname: '/components/sidebar',
-  //   title: 'Sidebar',
-  //   description:
-  //     'A highly composable side navigation component that supports nested views.',
-  // },
   alert: {
     key: 'alert',
     pathname: '/components/alert',
     title: 'Alert',
     description:
       'A section message is used to alert users to a particular section of the screen.',
+  },
+  avatar: {
+    key: 'avatar',
+    pathname: '/components/avatar',
+    title: 'Avatar',
+    description: 'An avatar is a visual representation of a user or entity.',
   },
   badge: {
     key: 'badge',
@@ -66,12 +60,59 @@ export const components = {
     title: 'Form',
     description: 'A form allows users to input information.',
   },
+  icon: {
+    key: 'icon',
+    pathname: '/components/icon',
+    title: 'Icon',
+    description:
+      'An icon is a visual representation of a command, device, directory, or common action.',
+  },
   input: {
     key: 'input',
     pathname: '/components/input',
     title: 'Input',
     description:
       'A text field is an input that allows a user to write or edit text.',
+  },
+  layout: {
+    key: 'layout',
+    pathname: '/components/layout',
+    title: 'Layout',
+    description:
+      "A collection of components which let you compose an application's page layout.",
+  },
+  menu: {
+    key: 'menu',
+    pathname: '/components/menu',
+    title: 'Menu',
+    description:
+      'A collection of composable menu components that can be used anywhere.',
+  },
+  navbar: {
+    key: 'navbar',
+    pathname: '/components/navbar',
+    title: 'Navbar',
+    description: 'A horizontal navigation component for Atlassian products.',
+  },
+  page: {
+    key: 'page',
+    pathname: '/components/page',
+    title: 'Page',
+    description:
+      "A collection of components which let you compose an application's page.",
+  },
+  popup: {
+    key: 'popup',
+    pathname: '/components/popup',
+    title: 'Popup',
+    description: 'A popup displays brief content in an overlay.',
+  },
+  radio: {
+    key: 'radio',
+    pathname: '/components/radio',
+    title: 'Radio',
+    description:
+      'A radio input allows users to select only one option from a number of choices. Radio is generally displayed in a radio group.',
   },
   textarea: {
     key: 'textarea',
@@ -80,66 +121,13 @@ export const components = {
     description:
       'A text area lets users enter long form text which spans over multiple lines.',
   },
-  // [
-  //   'cards',
-  //   'Cards',
-  //   'A cards contain content and actions about a single subject.',
-  // ],
-  // [
-  // [
-  //   'divider',
-  //   'Divider',
-  //   'A divider is a thin line that groups content in lists and layouts.',
-  // ],
-  // [
-  //   'icon',
-  //   'Icon',
-  //   'An icon is used as a visual representation of common actions and commands to provide context.',
-  // ],
-  // [
-  //   'image',
-  //   'Image',
-  //   'A Image combined with the skeleton, you can add dynamic progressive images to provide a better user experience.',
-  // ],
-  // [
-  //   'lozenge',
-  //   'Lozenge',
-  //   "A lozenge is a visual indicator used to highlight an item's status for quick recognition.",
-  // ],
-  // ['masonry', 'Masonry', 'Description will be added.'],
-  // [
-  //   'modal',
-  //   'Modal',
-  //   'A modal dialog displays content that requires user interaction, in a layer above the page.',
-  // ],
-  // [
-  //   'pagination',
-  //   'Pagination',
-  //   'A pagination allows you to divide large amounts of content into smaller chunks across multiple pages.',
-  // ],
-  // ['photo-gallery', 'Photo gallery', 'Description will be added.'],
-  // [
-  //   'scroll',
-  //   'Scroll',
-  //   'Content box with scroll bar used to partially serve content in the application.',
-  // ],
-  // [
-  //   'sliders',
-  //   'Sliders',
-  //   'Carousel component built with React. It is a react port of slick carousel.',
-  // ],
-  // [
-  //   'spinner',
-  //   'Spinner',
-  //   'A spinner is an animated spinning icon that lets users know content is being loaded.',
-  // ],
-  // [
-  //   'tabs',
-  //   'Tabs',
-  //   'Tabs are used to organize content by grouping similar information on the same page.',
-  // ],
-
-  // ['video', 'Video', 'Description will be added.'],
+  tooltip: {
+    key: 'tooltip',
+    pathname: '/components/tooltip',
+    title: 'Tooltip',
+    description:
+      'A tooltip is a floating, non-actionable label used to explain a user interface element or feature.',
+  },
 }
 
 export const foundations = {

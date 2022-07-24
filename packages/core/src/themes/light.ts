@@ -1,4 +1,4 @@
-import type { Theme } from './types'
+import type { Theme } from '../types'
 import {
   B300,
   B400,
@@ -14,6 +14,7 @@ import {
   N300,
   N40,
   N500,
+  N50A,
   N60,
   N700,
   N800,
@@ -29,7 +30,7 @@ import {
   Y400,
   Y50,
   Y500,
-} from './colors'
+} from '../colors'
 
 export const light: Theme = {
   alert: {
@@ -180,6 +181,12 @@ export const light: Theme = {
       },
     },
   },
+  popup: {
+    background: N0,
+    boxShadow: N50A,
+  },
+  tooltip: {
+    background: N800,
+    color: N0,
+  },
 }
-
-export const dark: Theme = light

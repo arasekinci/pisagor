@@ -95,6 +95,12 @@ export const PisagorProvider: React.FunctionComponent<PisagorProviderProps> = ({
         --checkbox-border-hover: ${N40};
         --checkbox-border-invalid: ${R300};
         --checkbox-border: ${N40};
+
+        --popup-background: ${theme.popup.background};
+        --popup-box-shadow: ${theme.popup.boxShadow};
+
+        --tooltip-background: ${theme.tooltip.background};
+        --tooltip-color: ${theme.tooltip.color};
       }`}</style>
       <PisagorContext.Provider value={value}>
         <ThemeProvider theme={theme}>{children}</ThemeProvider>
