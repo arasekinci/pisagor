@@ -2,12 +2,12 @@ import { css } from '@emotion/css'
 
 export const root = css({
   alignItems: 'baseline',
-  border: '0',
-  margin: '0 2px',
+  border: 0,
+  margin: 0,
   boxSizing: 'border-box',
   display: 'inline-flex',
   fontStyle: 'normal',
-  fontWeight: '500',
+  fontWeight: 500,
   maxWidth: '100%',
   borderRadius: 3,
   position: 'relative',

@@ -1,13 +1,20 @@
+import Button from '@pisagor/button'
+
 import type { CreateProps } from './Create.types'
-import IconButton from '../icon-button'
 
 export const Create: React.FunctionComponent<CreateProps> = ({
+  appearance = 'info',
   testId,
+  children,
   ...rest
 }) => {
   return (
-    <IconButton testId={testId && `${testId}-create`} {...rest}>
-      1
-    </IconButton>
+    <Button
+      appearance={appearance}
+      testId={testId && `${testId}-create`}
+      {...rest}
+    >
+      {children}
+    </Button>
   )
 }

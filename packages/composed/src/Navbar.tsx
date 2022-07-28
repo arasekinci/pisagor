@@ -37,8 +37,8 @@ const NavbarComposed: React.FunctionComponent<NavbarComposedProps> = ({
         {logo && <Logo {...logo} />}
         {menu && (
           <Navigation>
-            {menu.map((item) => (
-              <NavigationItem {...item} />
+            {menu.map((item, key) => (
+              <NavigationItem key={key} testId={testId} {...item} />
             ))}
           </Navigation>
         )}

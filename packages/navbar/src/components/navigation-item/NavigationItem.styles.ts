@@ -13,6 +13,7 @@ export const root = css({
 
 export const button = css({
   color: N600,
+  fontWeight: 500,
   borderRadius: 3,
   height: '2.2857142857142856em',
   lineHeight: '2.2857142857142856em',

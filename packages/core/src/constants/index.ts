@@ -14,3 +14,9 @@ export const LAYER_MODAL = 510
 export const LAYER_FLAG = 600
 export const LAYER_SPOTLIGHT = 700
 export const LAYER_TOOLTIP = 800
+
+export const BREAKPOINTS_EXTRA_SMALL = 480
+export const BREAKPOINTS_SMALL = 768
+export const BREAKPOINTS_MEDIUM = 1024
+export const BREAKPOINTS_LARGE = 1200
+export const BREAKPOINTS_EXTRA_LARGE = 1440

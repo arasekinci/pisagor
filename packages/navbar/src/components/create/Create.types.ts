@@ -1,3 +1,3 @@
-import type { IconButtonProps } from '../icon-button'
+import type { ButtonProps } from '@pisagor/button'
 
-export type CreateProps = IconButtonProps
+export type CreateProps = ButtonProps

@@ -16,6 +16,7 @@ import Navbar, {
 } from '@pisagor/navbar'
 
 import { components } from '@/constants/definitions'
+import { AtlaskitStarterLogo } from '@/components/logo'
 import Example from '@/components/example'
 import DocumentLayout from '@/layouts/document'
 
@@ -30,14 +31,15 @@ const NavbarPage: NextPage = () => {
         <Navbar>
           <Content>
             <AppSwitcher />
-            <Logo />
+            <Logo>
+              <AtlaskitStarterLogo />
+            </Logo>
             <Navigation>
               <NavigationItem isSelected>Your work</NavigationItem>
               <NavigationItem>Issues</NavigationItem>
-              <NavigationItem>Item</NavigationItem>
-              <NavigationItem>Item</NavigationItem>
+              <NavigationItem>Repositories</NavigationItem>
             </Navigation>
-            <Create />
+            <Create>Create</Create>
           </Content>
           <Actions>
             <Help />

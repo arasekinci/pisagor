@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react'
 import Head from 'next/head'
-
 import Layout from '@pisagor/composed/layout'
 import Navbar from '@pisagor/composed/navbar'
+
+import { AtlaskitStarterLogo } from '@/components/logo'
 
 import type { MainLayoutProps } from './MainLayout.types'
 
@@ -70,6 +71,9 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = ({
   const navbar = {
     children: (
       <Navbar
+        logo={{
+          children: <AtlaskitStarterLogo />,
+        }}
         menu={[
           {
             children: 'Brand',
@@ -81,6 +85,7 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = ({
             children: 'Content',
           },
           {
+            isSelected: true,
             children: 'Components',
           },
           {
