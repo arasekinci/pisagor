@@ -1,32 +1,32 @@
 import { css } from '@emotion/css'
+import { background, font } from '@pisagor/core/tokens'
+
+import type { AlertColor } from './alert.types'
+
+export const appearance = (color: AlertColor, accent: boolean) => {
+  if (accent) {
+    return css({
+      color: font('text.inverse'),
+      backgroundColor: background(`accent.${color}.bold`),
+    })
+  } else if (color === 'neutral') {
+    return css({
+      color: font('text'),
+      backgroundColor: background('accent.neutral.light'),
+    })
+  }
+
+  return css({
+    color: font('text'),
+    backgroundColor: background(`accent.${color}.lighter`),
+  })
+}
 
 export const root = css({
-  color: 'var(--alert-color)',
   display: 'flex',
   padding: 16,
   borderRadius: 3,
 })
-
-export const appearance = {
-  default: css({
-    backgroundColor: 'var(--alert-default-background)',
-  }),
-  error: css({
-    backgroundColor: 'var(--alert-error-background)',
-  }),
-  help: css({
-    backgroundColor: 'var(--alert-help-background)',
-  }),
-  info: css({
-    backgroundColor: 'var(--alert-info-background)',
-  }),
-  success: css({
-    backgroundColor: 'var(--alert-success-background)',
-  }),
-  warning: css({
-    backgroundColor: 'var(--alert-warning-background)',
-  }),
-}
 
 export const icon = css({
   flex: '0 0 40px',

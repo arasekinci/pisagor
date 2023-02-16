@@ -1,10 +1,11 @@
 export const rgb = (hex: string) => {
-  const color = hex.trim().replace('#', '')
+  const color = hex.trim().replace(/#/g, '')
   const red = parseInt(color.substring(0, 2), 16)
   const green = parseInt(color.substring(2, 4), 16)
   const blue = parseInt(color.substring(4, 6), 16)
+  const alpha = parseInt(color.substring(6, 8))
 
-  return [red, green, blue]
+  return alpha ? [red, green, blue, alpha] : [red, green, blue]
 }
 
 export const shade = (color: string, percent: number) => {

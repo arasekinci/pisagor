@@ -40,7 +40,7 @@ const BreadcrumbsPage: NextPage = () => {
       </Example>
       <h4>Separator</h4>
       <Example>
-        <Breadcrumbs separator={<Icon name="chevron_right" />}>
+        <Breadcrumbs separator={<Icon name="chevron-right" />}>
           <BreadcrumbsItem href="#">Home</BreadcrumbsItem>
           <BreadcrumbsItem href="#">Documents</BreadcrumbsItem>
           <BreadcrumbsItem href="#">Components</BreadcrumbsItem>

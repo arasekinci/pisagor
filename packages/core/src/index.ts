@@ -1,6 +1,2 @@
-export {
-  PisagorContext,
-  PisagorProvider,
-  usePisagor,
-  useTheme,
-} from './context'
+export * from './types'
+export * from './context'

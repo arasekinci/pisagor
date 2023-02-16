@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { N0, N10, N30, N400 } from '@pisagor/core/colors'
+import { background, border, font } from '@pisagor/core/tokens'
 
 import Anchor from '@/components/anchor'
 import Image from '@/components/image'
@@ -7,8 +7,8 @@ import Image from '@/components/image'
 export const Root = styled(Anchor)({
   display: 'block',
   minHeight: '100%',
-  background: N0,
-  border: `1px solid ${N30}`,
+  background: background(),
+  border: `1px solid ${border()}`,
   boxShadow: '0 2px 4px rgb(9 30 66 / 10%)',
   overflow: 'hidden',
   borderRadius: 4,
@@ -23,7 +23,7 @@ export const Root = styled(Anchor)({
 export const Figure = styled(Image)({
   width: '100%',
   height: 'auto',
-  backgroundColor: N10,
+  backgroundColor: background('neutral'),
 })
 
 export const Body = styled.div({
@@ -34,7 +34,7 @@ export const Body = styled.div({
   },
 
   'p:not([class])': {
-    color: N400,
+    color: font('subtlest'),
   },
 })
 

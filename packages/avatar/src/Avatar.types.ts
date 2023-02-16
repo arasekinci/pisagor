@@ -1,16 +1,12 @@
-import type { HTMLAttributes, ReactNode } from 'react'
+import type { HTMLAttributes } from 'react'
 
-export type AvatarPresence = 'online' | 'busy' | 'focus' | 'offline'
+import type { AvatarPresencePresence } from './components/presence'
 
 export type AvatarShape = 'circle' | 'square'
 
 export type AvatarSize = 'xsmall' | 'small' | 'medium' | 'large' | 'xlarge'
 
-export type AvatarStatus = 'approved' | 'declined' | 'locked'
-
-export type AvatarAttributes = HTMLAttributes<HTMLElement>
-
-export interface AvatarProps extends AvatarAttributes {
+export interface AvatarProps extends HTMLAttributes<HTMLDivElement> {
   /**
    * Provides alt text for the avatar image.
    */
@@ -25,7 +21,7 @@ export interface AvatarProps extends AvatarAttributes {
    * Alternatively accepts any React element. For best results, it is recommended to
    * use square content with height and width of 100%.
    */
-  presence?: AvatarPresence
+  presence?: AvatarPresencePresence
   /**
    * The prop description will be added here.
    */
@@ -38,11 +34,6 @@ export interface AvatarProps extends AvatarAttributes {
    * A url to load an image from (this can also be a base64 encoded image).
    */
   src?: string
-  /**
-   * Indicates contextual information by showing a small icon on the avatar.
-   * Refer to status values on the Status component.
-   */
-  status?: AvatarStatus
   /**
    * A `testId` prop is provided for specified elements, which is a unique string that
    * appears as a data attribute `data-testid` in the rendered code,

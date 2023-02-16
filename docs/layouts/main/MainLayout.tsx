@@ -112,7 +112,7 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = ({
   return (
     <Fragment>
       <Head>
-        <title>{title} - Documents</title>
+        <title>{`${title} - Documents`}</title>
       </Head>
       <Layout
         // banner={banner}

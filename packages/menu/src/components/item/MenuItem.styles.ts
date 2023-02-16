@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import { N20, N200 } from '@pisagor/core/colors'
+import { background, font } from '@pisagor/core/tokens'
 import { FONT_SIZE, GRID_SIZE } from '@pisagor/core/constants'
 
 export const root = css({
@@ -24,7 +24,7 @@ export const root = css({
 
   ':hover': {
     textDecoration: 'none',
-    backgroundColor: N20,
+    backgroundColor: background('neutral.hover'),
   },
 })
 
@@ -35,11 +35,11 @@ export const root = css({
 //     color: 'currentColor',
 //   },
 //   ':hover': {
-//     backgroundColor: token('color.background.neutral.subtle.hovered', N20),
+//     backgroundColor: tokenfn('color.background.neutral.subtle:hover', N20),
 //     color: 'currentColor',
 //   },
 //   ':active': {
-//     backgroundColor: token('color.background.neutral.subtle.pressed', N30),
+//     backgroundColor: tokenfn('color.background.neutral.subtle:active', N30),
 //     boxShadow: 'none',
 //     color: 'currentColor',
 //   },
@@ -49,24 +49,24 @@ export const root = css({
 //   cursor: 'not-allowed',
 //   '&, :hover, :active': {
 //     backgroundColor: 'transparent',
-//     color: token('color.text.disabled', N200),
+//     color: tokenfn('color.text.disabled', N200),
 //   },
 // });
 
 // const selectedStyles = css({
-//   backgroundColor: token('color.background.selected', N20),
+//   backgroundColor: tokenfn('color.background.selected', N20),
 //   // Fallback set as babel plugin inserts one otherwise
-//   color: token('color.text.selected', 'currentColor'),
+//   color: tokenfn('color.text.selected', 'currentColor'),
 //   ':visited': {
-//     color: token('color.text.selected', 'currentColor'),
+//     color: tokenfn('color.text.selected', 'currentColor'),
 //   },
 //   ':hover': {
-//     backgroundColor: token('color.background.selected.hovered', N20),
-//     color: token('color.text.selected', 'currentColor'),
+//     backgroundColor: tokenfn('color.background.selected:hover', N20),
+//     color: tokenfn('color.text.selected', 'currentColor'),
 //   },
 //   ':active': {
-//     backgroundColor: token('color.background.selected.pressed', N30),
-//     color: token('color.text.selected', 'currentColor'),
+//     backgroundColor: tokenfn('color.background.selected:active', N30),
+//     color: tokenfn('color.text.selected', 'currentColor'),
 //   },
 // });
 
@@ -90,7 +90,7 @@ export const title = css({
 
 export const description = css({
   marginTop: GRID_SIZE * 0.375,
-  color: N200,
+  color: font('subtlest'),
   fontSize: 12,
 })
 

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { N30, N500 } from '@pisagor/core/colors'
+import { background, font } from '@pisagor/core/tokens'
 
 export const Root = styled.div({
   display: 'flex',
@@ -18,12 +18,12 @@ export const Root = styled.div({
   borderRadius: 3,
 
   ':hover': {
-    color: N500,
-    backgroundColor: N30,
+    color: font('text'),
+    backgroundColor: background('neutral'),
   },
 
   ':focus': {
     backgroundColor: 'transparent',
-    color: N500,
+    color: font('text'),
   },
 })

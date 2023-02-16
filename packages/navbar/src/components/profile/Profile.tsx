@@ -9,7 +9,7 @@ export const Profile: React.FunctionComponent<ProfileProps> = ({
 }) => {
   return (
     <IconButton testId={testId && `${testId}-profile`} {...rest}>
-      <Icon name="account_circle" />
+      <Icon name="account-circle" />
     </IconButton>
   )
 }

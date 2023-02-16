@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { N0, N800 } from '@pisagor/core/colors'
+import { background, font } from '@pisagor/core/tokens'
 import Menu, { MenuGroup, MenuItem } from '@pisagor/menu'
 import Icon from '@pisagor/icon'
 
@@ -17,8 +17,8 @@ const MenuPage: NextPage = () => {
       <Example>
         <Menu
           style={{
-            color: N800,
-            backgroundColor: N0,
+            color: font('text'),
+            backgroundColor: background(),
             boxShadow:
               '0px 4px 8px rgba(9, 30, 66, 0.25), 0px 0px 1px rgba(9, 30, 66, 0.31)',
             borderRadius: 4,

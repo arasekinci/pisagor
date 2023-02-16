@@ -1,11 +1,10 @@
-import type { NextPage } from 'next'
 import Page, { PageHeader } from '@pisagor/page'
 import { Row, Column } from '@pisagor/gridview'
 
 import Card from '@/components/card'
 import Layout from '@/layouts/main'
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <Layout title="Design, develop, deliver">
       <Page>
@@ -57,5 +56,3 @@ const Home: NextPage = () => {
     </Layout>
   )
 }
-
-export default Home

@@ -18,7 +18,7 @@ export const Message: React.FunctionComponent<MessageProps> = ({
       case 'invalid':
         return <Icon name="cancel" size="xsmall" />
       case 'valid':
-        return <Icon name="check_circle" size="xsmall" />
+        return <Icon name="check-circle" size="xsmall" />
     }
   }
 

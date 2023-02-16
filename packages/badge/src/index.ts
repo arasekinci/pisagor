@@ -1,3 +1,3 @@
-export type { BadgeProps } from './Badge.types'
+export type { BadgeProps, BadgeColor, BadgeStatus } from './badge.types'
 
-export { default } from './Badge'
+export { default } from './badge'

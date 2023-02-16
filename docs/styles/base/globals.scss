@@ -4,6 +4,84 @@ body {
   overflow-x: hidden;
 }
 
+.color {
+  width: 100%;
+  height: 40px;
+  display: block;
+}
+
+.token {
+  tbody {
+    vertical-align: top;
+  }
+
+  th {
+    white-space: nowrap;
+  }
+
+  td {
+    min-width: 100px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid var(--N300);
+  }
+
+  p {
+    font-size: 14px;
+    color: var(--N700);
+  }
+
+  &-swatch {
+    width: 100%;
+    height: 24px;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid var(--N300A);
+  }
+}
+
+.table {
+  &\:2 th {
+    width: calc(100% / 2);
+  }
+
+  &\:3 th {
+    width: calc(100% / 3);
+  }
+
+  &\:4 th {
+    width: calc(100% / 4);
+  }
+
+  &\:5 th {
+    width: calc(100% / 5);
+  }
+
+  &\:6 th {
+    width: calc(100% / 6);
+  }
+
+  &\:7 th {
+    width: calc(100% / 7);
+  }
+
+  &\:8 th {
+    width: calc(100% / 8);
+  }
+
+  &\:9 th {
+    width: calc(100% / 9);
+  }
+
+  &\:10 th {
+    width: calc(100% / 10);
+  }
+}
+
+.text-align\:center {
+  text-align: center;
+}
+
 @keyframes skeleton {
   100% {
     transform: translateX(100%);

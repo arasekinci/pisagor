@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { N10 } from '@pisagor/core/colors'
+import { background } from '@pisagor/core/tokens'
 
 import type { LeftSidebarPosition } from './LeftSidebar.types'
 
@@ -13,5 +13,5 @@ export const Root = styled.div<{
   height: position === 'fixed' ? '100%' : 'auto',
   transition: 'width 300ms cubic-bezier(0.2,0,0,1) 0s',
   zIndex: 2,
-  backgroundColor: N10,
+  backgroundColor: background('neutral'),
 }))

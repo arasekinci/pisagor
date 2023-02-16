@@ -1,0 +1,6 @@
+{
+  "name": "@pisagor/core/hooks",
+  "types": "../dist/@types/hooks/index.d.ts",
+  "main": "../dist/cjs/hooks/index.js",
+  "module": "../dist/esm/hooks/index.js"
+}

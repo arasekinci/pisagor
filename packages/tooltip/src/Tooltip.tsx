@@ -2,8 +2,8 @@ import React, { useRef, Fragment, useState } from 'react'
 import { classnames } from 'begonya/functions'
 import Popper from '@pisagor/popper'
 
-import type { TooltipProps } from './Tooltip.types'
-import * as styles from './Tooltip.styles'
+import type { TooltipProps } from './tooltip.types'
+import * as styles from './tooltip.styles'
 
 const Tooltip: React.FunctionComponent<TooltipProps> = ({
   children,
@@ -28,7 +28,7 @@ const Tooltip: React.FunctionComponent<TooltipProps> = ({
   const renderTrigger = () => {
     if (React.isValidElement(children)) {
       if (React.Children.only(children)) {
-        return React.cloneElement(children, {
+        return React.cloneElement<any>(children, {
           ref: triggerRef,
           onMouseEnter: handleMouseEnter,
           onMouseLeave: handleMouseLeave,

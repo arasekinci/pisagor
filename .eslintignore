@@ -1,2 +1,4 @@
+# See https://eslint.org/docs/user-guide/configuring/ignoring-code for more information.
+
 /**/dist
 /**/node_modules

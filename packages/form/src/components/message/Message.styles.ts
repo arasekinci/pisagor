@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import { N200, R400, G400 } from '@pisagor/core/colors'
+import { font } from '@pisagor/core/tokens'
 
 export const root = css({
   fontSize: '0.857143em',
@@ -15,12 +15,12 @@ export const root = css({
 
 export const types = {
   invalid: css({
-    color: R400,
+    color: font('error'),
   }),
   valid: css({
-    color: G400,
+    color: font('success'),
   }),
   description: css({
-    color: N200,
+    color: font('subtlest'),
   }),
 }

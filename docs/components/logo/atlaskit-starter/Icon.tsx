@@ -1,11 +1,11 @@
 import React from 'react'
-import { B200, B400 } from '@pisagor/core/colors'
+import { background } from '@pisagor/core/tokens'
 
 import Container, { ContainerProps } from '../Container'
 
 const Icon: React.FunctionComponent<ContainerProps> = ({
-  iconGradientStart = B200,
-  iconGradientStop = B400,
+  iconGradientStart = background('info.bold'),
+  iconGradientStop = background('info.bold.active'),
   ...rest
 }) => {
   const id = 'atlaskit-starter'
@@ -13,7 +13,7 @@ const Icon: React.FunctionComponent<ContainerProps> = ({
   return (
     <Container
       aria-label="Atlaskit Starter Icon"
-      iconColor={B200}
+      iconColor={background('info.bold')}
       iconGradientStart={iconGradientStart}
       iconGradientStop={iconGradientStop}
       {...rest}

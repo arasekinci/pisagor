@@ -1,6 +1,6 @@
 import { usePisagor } from '@pisagor/core'
 
-import type { AnchorProps } from './Anchor.types'
+import type { AnchorProps } from './anchor.types'
 
 const Anchor: React.FunctionComponent<AnchorProps> = ({
   children,

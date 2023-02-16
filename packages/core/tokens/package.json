@@ -1,0 +1,6 @@
+{
+  "name": "@pisagor/core/tokens",
+  "types": "../dist/@types/tokens/index.d.ts",
+  "main": "../dist/cjs/tokens/index.js",
+  "module": "../dist/esm/tokens/index.js"
+}

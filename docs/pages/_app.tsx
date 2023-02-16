@@ -1,15 +1,13 @@
-import React, { useEffect } from 'react'
+import React, { StrictMode, useEffect } from 'react'
 import type { AppProps } from 'next/app'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import { PisagorProvider } from '@pisagor/core'
-import { light } from '@pisagor/core/themes'
-import '@pisagor/css/normalize'
-import '@pisagor/css/gridview'
+import '@pisagor/core/css'
 
 import '@/styles/main.scss'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     const handleRouteStart = () => {
       NProgress.start()
@@ -29,10 +27,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [])
 
   return (
-    <PisagorProvider theme={light}>
-      <Component {...pageProps} />
-    </PisagorProvider>
+    <StrictMode>
+      <PisagorProvider mode="light">
+        <Component {...pageProps} />
+      </PisagorProvider>
+    </StrictMode>
   )
 }
 
-export default MyApp
+export default App

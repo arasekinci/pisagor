@@ -1,10 +1,10 @@
 import { css } from '@emotion/css'
-import { LAYER_MODAL } from '@pisagor/core/constants'
+import { layer } from '@pisagor/core/tokens'
 
 export const root = css({
   position: 'fixed',
   display: 'flex',
-  zIndex: LAYER_MODAL,
+  zIndex: layer('modal'),
   overflow: 'hidden',
   maxWidth: '100vw',
   maxHeight: '100vh',

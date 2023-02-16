@@ -1,24 +1,27 @@
 import React from 'react'
 import { classnames } from 'begonya/functions'
-import { useTheme } from '@pisagor/core'
+import { convertStatusNameToColor } from '@pisagor/core/themes'
+import Cormorant from '@pisagor/cormorant'
 import Icon from '@pisagor/icon'
 
-import type { AlertProps } from './Alert.types'
-import * as styles from './Alert.styles'
+import type { AlertProps } from './alert.types'
+import * as styles from './alert.styles'
 
 const Alert: React.FunctionComponent<AlertProps> = ({
-  appearance = 'default',
+  accent = false,
   children,
   className,
+  color = 'neutral',
   icon,
+  status,
   testId,
   title,
   ...rest
 }) => {
-  const { alert } = useTheme()
+  const appearance = convertStatusNameToColor(color, status)
   const classNames = classnames(
     styles.root,
-    styles.appearance[appearance],
+    styles.appearance(appearance, accent),
     className
   )
 
@@ -27,28 +30,32 @@ const Alert: React.FunctionComponent<AlertProps> = ({
       return icon
     }
 
-    switch (appearance) {
+    switch (status) {
       case 'error':
-        return <Icon name="error" color={alert.error.icon.color} />
+        return <Icon name="error" color={appearance} />
       case 'help':
-        return <Icon name="help" color={alert.help.icon.color} />
+        return <Icon name="help" color={appearance} />
       case 'info':
-        return <Icon name="info" color={alert.info.icon.color} />
+        return <Icon name="info" color={appearance} />
       case 'success':
-        return <Icon name="check_circle" color={alert.success.icon.color} />
+        return <Icon name="check-circle" color={appearance} />
       case 'warning':
-        return <Icon name="warning" color={alert.warning.icon.color} />
-      default:
-        return <Icon name="message" color={alert.default.icon.color} />
+        return <Icon name="warning" color={appearance} />
     }
   }
 
   return (
     <section className={classNames} role="alert" data-testid={testId} {...rest}>
-      {!icon && <div className={styles.icon}>{renderIcon()}</div>}
+      <Cormorant condition={icon || status}>
+        <div className={styles.icon}>{renderIcon()}</div>
+      </Cormorant>
       <div className={styles.content}>
-        {title && <h3 className={styles.title}>{title}</h3>}
-        <div>{children}</div>
+        <Cormorant condition={title}>
+          <h3 className={styles.title}>{title}</h3>
+        </Cormorant>
+        <Cormorant condition={children}>
+          <div>{children}</div>
+        </Cormorant>
       </div>
     </section>
   )

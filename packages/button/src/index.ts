@@ -1,5 +1,5 @@
-export type { ButtonProps } from './Button.types'
+export type { ButtonProps } from './button.types'
 
 export * from './components/custom'
 
-export { default } from './Button'
+export { default } from './button'

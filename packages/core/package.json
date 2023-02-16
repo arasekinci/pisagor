@@ -25,7 +25,20 @@
   "scripts": {
     "build:esm": "tsc --module es2015 --outDir dist/esm",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "build": "yarn build:esm && yarn build:cjs"
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:token": "yarn gulp build"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.10",
+    "@types/gulp-autoprefixer": "^0.0.33",
+    "@types/gulp-clean-css": "^4.3.0",
+    "@types/gulp-concat": "^0.0.33",
+    "fs": "^0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "ts-node": "^10.9.1"
   },
   "private": false
 }

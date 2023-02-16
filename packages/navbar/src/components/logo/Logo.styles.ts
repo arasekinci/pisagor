@@ -1,6 +1,6 @@
 import { css } from '@emotion/css'
-import { B400, B50 } from '@pisagor/core/colors'
 import { BORDER_RADIUS } from '@pisagor/core/constants'
+import { background, font } from '@pisagor/core/tokens'
 
 export const root = css({
   position: 'relative',
@@ -13,8 +13,8 @@ export const root = css({
   },
 
   '&:hover': {
-    color: B400,
-    backgroundColor: B50,
+    color: font('text'),
+    backgroundColor: background('neutral'),
   },
 
   '& > *': {

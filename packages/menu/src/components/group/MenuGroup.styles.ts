@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import { N300, N30A } from '@pisagor/core/colors'
+import { background, font } from '@pisagor/core/tokens'
 
 export const root = css({
   flexShrink: 1,
@@ -8,11 +8,11 @@ export const root = css({
 })
 
 export const separator = css({
-  borderTop: `2px solid ${N30A}`,
+  borderTop: `2px solid ${background('neutral')}`,
 })
 
 export const title = css({
-  color: N300,
+  color: font('subtlest'),
   fontSize: 11,
   fontWeight: 700,
   lineHeight: 1.45455,

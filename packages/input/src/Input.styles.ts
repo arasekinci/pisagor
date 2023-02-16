@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import { B100, N0, N10, N20, N40 } from '@pisagor/core/colors'
+import { border, background } from '@pisagor/core/tokens'
 
 export const root = css({
   width: '100%',
@@ -18,20 +18,20 @@ export const input = css({
   display: 'block',
   borderRadius: 3,
   outline: '0',
-  border: `2px solid ${N40}`,
-  backgroundColor: N10,
+  border: `2px solid ${border('neutral')}`,
+  backgroundColor: background('neutral'),
   boxSizing: 'border-box',
   pointerEvents: 'auto',
   wordWrap: 'break-word',
   transition: '200ms',
 
   ':hover': {
-    backgroundColor: N20,
+    backgroundColor: background('neutral.hover'),
   },
 
   ':focus': {
-    backgroundColor: N0,
-    borderColor: B100,
+    backgroundColor: background('neutral.active'),
+    borderColor: border('neutral'),
   },
 })
 

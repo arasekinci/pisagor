@@ -1,11 +1,11 @@
 import React from 'react'
-import { B200, B400, N600 } from '@pisagor/core/colors'
+import { background, font } from '@pisagor/core/tokens'
 
 import Container, { ContainerProps } from '../Container'
 
 const Logo: React.FunctionComponent<ContainerProps> = ({
-  iconGradientStart = B200,
-  iconGradientStop = B400,
+  iconGradientStart = background('info.bold'),
+  iconGradientStop = background('info.bold.active'),
   ...rest
 }) => {
   const id = 'atlaskit-starter'
@@ -13,10 +13,10 @@ const Logo: React.FunctionComponent<ContainerProps> = ({
   return (
     <Container
       aria-label="Atlaskit Starter Logo"
-      iconColor={B200}
+      iconColor={background('info.bold')}
       iconGradientStart={iconGradientStart}
       iconGradientStop={iconGradientStop}
-      textColor={N600}
+      textColor={font('subtle')}
       {...rest}
     >
       <canvas width="175" height="50" aria-hidden="true" />

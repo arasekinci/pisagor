@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import { N0, N30A, N40A, N600 } from '@pisagor/core/colors'
+import { background, font } from '@pisagor/core/tokens'
 
 export const root = css({
   position: 'relative',
@@ -9,10 +9,10 @@ export const root = css({
   justifyContent: 'space-between',
   paddingLeft: 16,
   paddingRight: 16,
-  color: N600,
+  color: font('subtle'),
   height: 'var(--navbarHeight, 0px)',
   boxSizing: 'border-box',
-  backgroundColor: N0,
+  backgroundColor: background(),
 
   '&::after': {
     position: 'absolute',
@@ -21,6 +21,10 @@ export const root = css({
     right: 0,
     left: 0,
     height: 4,
-    background: `linear-gradient(180deg, ${N40A} 0, ${N40A} 1px, ${N30A} 1px, transparent 4px)`,
+    background: `linear-gradient(180deg, ${background(
+      'neutral'
+    )} 0, ${background('neutral')} 1px, ${background(
+      'neutral'
+    )} 1px, transparent 4px)`,
   },
 })

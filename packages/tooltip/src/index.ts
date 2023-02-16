@@ -3,6 +3,6 @@ export type {
   TooltipPosition,
   TooltipProps,
   TooltipTriggerProps,
-} from './Tooltip.types'
+} from './tooltip.types'
 
-export { default } from './Tooltip'
+export { default } from './tooltip'

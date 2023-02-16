@@ -1,4 +1,5 @@
 import type { ButtonHTMLAttributes, ReactElement } from 'react'
+import type { IconProps } from '@pisagor/icon'
 
 export type ButtonAppearance =
   | 'default'
@@ -22,11 +23,11 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   /**
    * The prop description will be added here.
    */
-  iconBefore?: ReactElement
+  iconBefore?: ReactElement<IconProps>
   /**
    * The prop description will be added here.
    */
-  iconAfter?: ReactElement
+  iconAfter?: ReactElement<IconProps>
   /**
    * The prop description will be added here.
    */

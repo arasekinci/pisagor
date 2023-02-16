@@ -1,9 +1,11 @@
 import { css } from '@emotion/css'
+import { icon } from '@pisagor/core/tokens'
 
 import { sizes } from './core/constants'
-import type { IconSize } from './Icon.types'
+import type { IconAppearance, IconColor, IconSize } from './icon.types'
 
 export const root = css({
+  color: icon(),
   fontFamily: 'Material Icons',
   fontWeight: 'normal',
   fontStyle: 'normal',
@@ -17,6 +19,16 @@ export const root = css({
   WebkitFontFeatureSettings: 'liga',
   WebkitFontSmoothing: 'antialiased',
 })
+
+export const appearance = (str: IconAppearance) =>
+  css({
+    color: icon(str),
+  })
+
+export const color = (str: IconColor) =>
+  css({
+    color: icon(`accent.${str}`),
+  })
 
 export const size = (size: IconSize) =>
   css({

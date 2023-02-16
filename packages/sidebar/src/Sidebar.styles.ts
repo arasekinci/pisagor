@@ -1,12 +1,12 @@
 import styled from '@emotion/styled'
-import { N10, N500 } from '@pisagor/core/colors'
+import { background, font } from '@pisagor/core/tokens'
 
 export const Root = styled.div({
   width: '100%',
   height: '100%',
-  color: N500,
+  color: font('subtlest'),
   minWidth: 240,
-  backgroundColor: N10,
+  backgroundColor: background('neutral'),
   position: 'relative',
   display: 'flex',
   flexDirection: 'column',

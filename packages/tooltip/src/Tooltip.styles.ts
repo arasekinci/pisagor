@@ -1,15 +1,16 @@
 import { css } from '@emotion/css'
-import { BORDER_RADIUS, LAYER_TOOLTIP } from '@pisagor/core/constants'
+import { BORDER_RADIUS } from '@pisagor/core/constants'
+import { font, layer, palette } from '@pisagor/core/tokens'
 
 export const root = css({
   boxSizing: 'border-box',
   maxWidth: '240px',
   padding: '2px 6px',
-  borderRadius: BORDER_RADIUS,
-  color: 'var(--tooltip-color)',
+  color: font('text.inverse'),
   fontSize: '12px',
-  zIndex: LAYER_TOOLTIP,
+  zIndex: layer('tooltip'),
+  borderRadius: BORDER_RADIUS,
   overflowWrap: 'break-word',
   wordWrap: 'break-word',
-  backgroundColor: 'var(--tooltip-background)',
+  backgroundColor: palette('neutral.1000'),
 })

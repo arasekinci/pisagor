@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { B100, B200, N0, N200 } from '@pisagor/core/colors'
+import { background, font } from '@pisagor/core/tokens'
 
 import type { SlotPosition } from './Slot.types'
 
@@ -42,7 +42,7 @@ export const ResizeShadow = styled.div({
   transitionTimingFunction: 'cubic-bezier(0.2,0,0,1)',
 
   ':hover': {
-    background: B200,
+    background: background('info'),
   },
 })
 
@@ -53,8 +53,8 @@ export const ResizeButton = styled.button({
   position: 'absolute',
   top: 32,
   left: 0,
-  color: N200,
-  backgroundColor: N0,
+  color: font('subtlest'),
+  backgroundColor: background(),
   border: 0,
   borderRadius: '50%',
   boxShadow: '0 0 0 1px rgb(9 30 66 / 8%),0 2px 4px 1px rgb(9 30 66 / 8%)',
@@ -65,7 +65,7 @@ export const ResizeButton = styled.button({
   transform: 'translateX(-50%) rotate(180deg)',
 
   ':hover': {
-    color: N0,
-    background: B100,
+    color: font('text'),
+    background: background('info'),
   },
 })

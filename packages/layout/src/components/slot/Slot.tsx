@@ -19,11 +19,11 @@ const Slot: React.FunctionComponent<SlotProps> = ({
             name={
               isOpen
                 ? position === 'left'
-                  ? 'chevron_right'
-                  : 'chevron_left'
+                  ? 'chevron-right'
+                  : 'chevron-left'
                 : position === 'left'
-                ? 'chevron_left'
-                : 'chevron_right'
+                ? 'chevron-left'
+                : 'chevron-right'
             }
           />
         </Styled.ResizeButton>

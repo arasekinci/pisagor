@@ -1,0 +1,5 @@
+{
+  "name": "@pisagor/core/css",
+  "description": "Normalize makes browsers render all elements more consistently and in line with modern standards.",
+  "main": "../dist/bundle.css"
+}

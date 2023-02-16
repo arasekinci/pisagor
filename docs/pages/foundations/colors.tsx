@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react'
 import type { NextPage } from 'next'
+import { palette } from '@pisagor/core/tokens'
 import { Row, Column } from '@pisagor/gridview'
+import Button from '@pisagor/button'
 
 import { color } from '@/core/utils'
 import DocumentLayout from '@/layouts/document'
 
 interface ColorProps {
   name: string
-  title: string
+  h?: string
 }
 
-export const Color: React.FunctionComponent<ColorProps> = ({ name, title }) => {
+const Color: React.FunctionComponent<ColorProps> = ({ name, h }) => {
   const [hex, setHex] = useState('-')
   const [rgb, setRgb] = useState('-')
 
@@ -26,26 +28,10 @@ export const Color: React.FunctionComponent<ColorProps> = ({ name, title }) => {
   }, [name])
 
   return (
-    <div className="color">
-      <div
-        className="color-swatch"
-        style={{ backgroundColor: hex || `var(--${name})` }}
-      />
-      <div className="color-content">
-        <div className="color-name">
-          <h4>Name</h4>
-          <p>{title || name}</p>
-        </div>
-        <div>
-          <h4>Hex</h4>
-          <p>{hex}</p>
-        </div>
-        <div>
-          <h4>RGB</h4>
-          <p>{rgb}</p>
-        </div>
-      </div>
-    </div>
+    <div
+      className="color"
+      style={{ backgroundColor: h || hex || `var(--${name})` }}
+    />
   )
 }
 
@@ -55,109 +41,199 @@ const Colors: NextPage = () => {
       title="Colors"
       description="Color distinguishes our brand and helps us create consistent experiences across products."
     >
-      <h4>Neutrals</h4>
-      <Row gutter="lg">
-        {[
-          ['N900 - Slate', 'N900'],
-          ['N800 - Squid ink', 'N800'],
-          ['N700 - Snorlax', 'N700'],
-          ['N600 - Pet rock', 'N600'],
-          ['N500 - McFanning', 'N500'],
-          ['N400 - Concrete jungle', 'N400'],
-          ['N300 - Clooney', 'N300'],
-          ['N200 - Bling bling', 'N200'],
-          ['N100 - Humboldt fog', 'N100'],
-          ['N90 - Meredith', 'N90'],
-          ['N80 - Spooky ghost', 'N80'],
-          ['N70 - Blanche', 'N70'],
-          ['N60 - Sentinel', 'N60'],
-          ['N50 - Karl', 'N50'],
-          ['N40 - Jolly fun time', 'N40'],
-          ['N30 - Northeast snow', 'N30'],
-          ["N20 - Gram's hair", 'N20'],
-          ['N10 - Wash me', 'N10'],
-          ['N0 - Doctor', 'N0'],
-        ].map(([title, name]) => (
-          <Column key={name} size={4}>
-            <Color title={title} name={name} />
-          </Column>
-        ))}
+      <Row gutter="sm">
+        <Column style={{ width: '10%' }}>
+          <h4>Blue</h4>
+          <br />
+          {[
+            'B100',
+            'B200',
+            'B300',
+            'B400',
+            'B500',
+            'B600',
+            'B700',
+            'B800',
+            'B900',
+            'B1000',
+          ].map((name) => (
+            <Color key={name} name={name} />
+          ))}
+        </Column>
+        <Column style={{ width: '10%' }}>
+          <h4>Green</h4>
+          <br />
+          {[
+            'G100',
+            'G200',
+            'G300',
+            'G400',
+            'G500',
+            'G600',
+            'G700',
+            'G800',
+            'G900',
+            'G1000',
+          ].map((name) => (
+            <Color key={name} name={name} />
+          ))}
+        </Column>
+        <Column style={{ width: '10%' }}>
+          <h4>Magenta</h4>
+          <br />
+          {[
+            'M100',
+            'M200',
+            'M300',
+            'M400',
+            'M500',
+            'M600',
+            'M700',
+            'M800',
+            'M900',
+            'M1000',
+          ].map((name) => (
+            <Color key={name} name={name} />
+          ))}
+        </Column>
+        <Column style={{ width: '10%' }}>
+          <h4>Orange</h4>
+          <br />
+          {[
+            'O100',
+            'O200',
+            'O300',
+            'O400',
+            'O500',
+            'O600',
+            'O700',
+            'O800',
+            'O900',
+            'O1000',
+          ].map((name) => (
+            <Color key={name} name={name} />
+          ))}
+        </Column>
+        <Column style={{ width: '10%' }}>
+          <h4>Purple</h4>
+          <br />
+          {[
+            'P100',
+            'P200',
+            'P300',
+            'P400',
+            'P500',
+            'P600',
+            'P700',
+            'P800',
+            'P900',
+            'P1000',
+          ].map((name) => (
+            <Color key={name} name={name} />
+          ))}
+        </Column>
+        <Column style={{ width: '10%' }}>
+          <h4>Red</h4>
+          <br />
+          {[
+            'R100',
+            'R200',
+            'R300',
+            'R400',
+            'R500',
+            'R600',
+            'R700',
+            'R800',
+            'R900',
+            'R1000',
+          ].map((name) => (
+            <Color key={name} name={name} />
+          ))}
+        </Column>
+        <Column style={{ width: '10%' }}>
+          <h4>Teal</h4>
+          <br />
+          {[
+            'T100',
+            'T200',
+            'T300',
+            'T400',
+            'T500',
+            'T600',
+            'T700',
+            'T800',
+            'T900',
+            'T1000',
+          ].map((name) => (
+            <Color key={name} name={name} />
+          ))}
+        </Column>
+        <Column style={{ width: '10%' }}>
+          <h4>Yellow</h4>
+          <br />
+          {[
+            'Y100',
+            'Y200',
+            'Y300',
+            'Y400',
+            'Y500',
+            'Y600',
+            'Y700',
+            'Y800',
+            'Y900',
+            'Y1000',
+          ].map((name) => (
+            <Color key={name} name={name} />
+          ))}
+        </Column>
       </Row>
-      <h4>Red</h4>
+      <h3>Neutrals</h3>
+      <br />
       <Row gutter="lg">
-        {[
-          ["R500 - Dragon's blood", 'R500'],
-          ['R400 - Red dirt', 'R400'],
-          ['R300 - Poppy surprise', 'R300'],
-          ['R200 - Salmon sashimi', 'R200'],
-          ['R100 - Alexandria', 'R100'],
-          ['R75 - Bondi sunburn', 'R75'],
-          ['R50 - Rosie', 'R50'],
-        ].map(([title, name]) => (
-          <Column key={name} size={4}>
-            <Color title={title} name={name} />
-          </Column>
-        ))}
-      </Row>
-      <h4>Yellow</h4>
-      <Row gutter="lg">
-        {[
-          ['Y500 - Debrito', 'Y500'],
-          ['Y400 - Cheezy blasters', 'Y400'],
-          ['Y300 - Golden state', 'Y300'],
-          ['Y100 - Cowbell', 'Y100'],
-          ['Y75 - Dandelion whisper', 'Y75'],
-          ['Y50 - James blonde', 'Y50'],
-        ].map(([title, name]) => (
-          <Column key={name} size={4}>
-            <Color title={title} name={name} />
-          </Column>
-        ))}
-      </Row>
-      <h4>Green</h4>
-      <Row gutter="lg">
-        {[
-          ['G500 - Keen green', 'G500'],
-          ['G400 - Slime', 'G400'],
-          ['G300 - Fine pine', 'G300'],
-          ['G100 - Cloverleaf', 'G100'],
-          ['G75 - Mintie', 'G75'],
-          ['G50 - The smell', 'G50'],
-        ].map(([title, name]) => (
-          <Column key={name} size={4}>
-            <Color title={title} name={name} />
-          </Column>
-        ))}
-      </Row>
-      <h4>Blue</h4>
-      <Row gutter="lg">
-        {[
-          ['B500 - Chore coat', 'B500'],
-          ['B400 - Pacific bridge', 'B400'],
-          ['B300 - Sodium explosion', 'B300'],
-          ['B100 - Arvo breeze', 'B100'],
-          ['B75 - Schwag', 'B75'],
-          ['B50 - Pixie dust', 'B50'],
-        ].map(([title, name]) => (
-          <Column key={name} size={4}>
-            <Color title={title} name={name} />
-          </Column>
-        ))}
-      </Row>
-      <h4>Purple</h4>
-      <Row gutter="lg">
-        {[
-          ['P500 - Prince', 'P500'],
-          ['P400 - Snozzberry', 'P400'],
-          ["P300 - Da' juice", 'P300'],
-          ['P100 - Herky jerky', 'P100'],
-          ['P75 - Phantom mist', 'P75'],
-          ['P50 - Lavender secret', 'P50'],
-        ].map(([title, name]) => (
-          <Column key={name} size={4}>
-            <Color title={title} name={name} />
-          </Column>
-        ))}
+        <Column size={6}>
+          <h4>Light Neutral</h4>
+          <br />
+          <div style={{ padding: 50, backgroundColor: '#f1f1f1' }}>
+            {[
+              'N0',
+              'N100',
+              'N200',
+              'N300',
+              'N400',
+              'N500',
+              'N600',
+              'N700',
+              'N800',
+              'N900',
+              'N1000',
+              'N1100',
+            ].map((name) => (
+              <Color key={name} name={name} />
+            ))}
+          </div>
+        </Column>
+        <Column size={6}>
+          <h4>Dark Neutral</h4>
+          <br />
+          <div style={{ padding: 50, backgroundColor: '#010101' }}>
+            {[
+              'N0',
+              'N100',
+              'N200',
+              'N300',
+              'N400',
+              'N500',
+              'N600',
+              'N700',
+              'N800',
+              'N900',
+              'N1000',
+              'N1100',
+            ].map((name) => (
+              <Color key={name} name={name} />
+            ))}
+          </div>
+        </Column>
       </Row>
     </DocumentLayout>
   )

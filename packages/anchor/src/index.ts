@@ -1,3 +1,3 @@
-export type { AnchorProps } from './Anchor.types'
+export type { AnchorProps } from './anchor.types'
 
-export { default } from './Anchor'
+export { default } from './anchor'

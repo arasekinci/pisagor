@@ -1,3 +1,5 @@
-export type { AvatarProps } from './Avatar.types'
+export type { AvatarProps } from './avatar.types'
 
-export { default } from './Avatar'
+export * from './components/group'
+
+export { default } from './avatar'

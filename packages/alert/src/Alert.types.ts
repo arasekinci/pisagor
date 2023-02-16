@@ -1,28 +1,21 @@
 import type { HTMLAttributes, ReactElement } from 'react'
+import type { Color, Status } from '@pisagor/core'
 
-export type AlertAppearance =
-  | 'default'
-  | 'error'
-  | 'help'
-  | 'info'
-  | 'success'
-  | 'warning'
+export type AlertColor = Color
+
+export type AlertStatus = Status
+
+/**
+ * Props for the Alert component.
+ *
+ * @extends {HTMLAttributes<HTMLElement>}
+ */
 
 export interface AlertProps extends HTMLAttributes<HTMLElement> {
-  /**
-   * The prop description will be added here.
-   */
-  appearance?: AlertAppearance
-  /**
-   * The prop description will be added here.
-   */
-  title?: string
-  /**
-   * The prop description will be added here.
-   */
+  accent?: boolean
   icon?: ReactElement | null
-  /**
-   * The prop description will be added here.
-   */
+  color?: AlertColor
+  status?: AlertStatus
   testId?: string
+  title?: string
 }

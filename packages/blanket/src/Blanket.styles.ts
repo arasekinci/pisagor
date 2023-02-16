@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import { LAYER_BLANKET } from '@pisagor/core/constants'
+import { layer } from '@pisagor/core/tokens'
 
 export const root = css({
   position: 'fixed',
@@ -7,7 +7,7 @@ export const root = css({
   right: 0,
   bottom: 0,
   left: 0,
-  zIndex: LAYER_BLANKET,
+  zIndex: layer('blanket'),
   overflowY: 'auto',
   pointerEvents: 'initial',
   backgroundColor: 'var(--blanket-background)',

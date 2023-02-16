@@ -1,9 +1,9 @@
 import { css } from '@emotion/css'
-import { N0, N90 } from '@pisagor/core/colors'
+import { palette, font } from '@pisagor/core/tokens'
 
 export const root = css({
   alignItems: 'center',
-  backgroundColor: N90,
+  backgroundColor: palette('neutral.600'),
   boxSizing: 'content-box',
   cursor: 'inherit',
   display: 'inline-flex',
@@ -13,7 +13,7 @@ export const root = css({
   position: 'static',
   transform: 'translateZ(0px)',
   transition: 'transform 200ms ease 0s, opacity 200ms ease 0s',
-  boxShadow: `0 0 0 2px ${N0}`,
+  boxShadow: `0 0 0 2px ${palette('neutral.0')}`,
   verticalAlign: 'middle',
   border: 'none',
   margin: 2,
@@ -66,7 +66,7 @@ export const size = {
 }
 
 export const name = css({
-  color: N0,
+  color: font('text.inverse'),
   fontSize: '1em',
   fontWeight: 600,
   display: 'block',
@@ -79,24 +79,11 @@ export const img = css({
 })
 
 export const svg = css({
-  color: N0,
+  color: font('text.inverse'),
   width: '100%',
   height: '100%',
   overflow: 'hidden',
   pointerEvents: 'none',
   verticalAlign: 'bottom',
   display: 'block',
-})
-
-export const presence = css({
-  pointerEvents: 'none',
-  position: 'absolute',
-  width: 15,
-  height: 15,
-  right: -2,
-  bottom: -2,
-  borderRadius: '50%',
-  border: `2px solid ${N0}`,
-  backgroundColor: N0,
-  boxSizing: 'border-box',
 })

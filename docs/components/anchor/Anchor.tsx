@@ -11,21 +11,25 @@ const Anchor: React.ForwardRefRenderFunction<HTMLAnchorElement, AnchorProps> = (
   const router = useRouter()
   const isCurrent = router.asPath === href
 
-  const anchor = (
-    <a ref={ref} aria-current={isCurrent ? 'page' : 'false'} {...rest}>
-      {children}
-    </a>
-  )
-
   if (href) {
     return (
-      <Link href={href} {...link}>
-        {anchor}
+      <Link
+        href={href}
+        ref={ref}
+        aria-current={isCurrent ? 'page' : 'false'}
+        {...rest}
+        {...link}
+      >
+        {children}
       </Link>
     )
   }
 
-  return anchor
+  return (
+    <a ref={ref} aria-current={isCurrent ? 'page' : 'false'} {...rest}>
+      {children}
+    </a>
+  )
 }
 
 export default React.forwardRef(Anchor)

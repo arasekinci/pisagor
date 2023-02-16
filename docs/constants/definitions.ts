@@ -1,4 +1,11 @@
 export const components = {
+  accordion: {
+    key: 'accordion',
+    pathname: '/components/accordion',
+    title: 'Accordion',
+    description:
+      'A section message is used to alert users to a particular section of the screen.',
+  },
   alert: {
     key: 'alert',
     pathname: '/components/alert',

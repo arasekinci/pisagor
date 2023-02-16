@@ -1,6 +1,8 @@
 import { css } from '@emotion/css'
+import { background, font } from '@pisagor/core/tokens'
 
 export const root = css({
+  color: font('text.inverse'),
   alignItems: 'baseline',
   border: 0,
   margin: 0,
@@ -24,87 +26,70 @@ export const root = css({
 
 export const appearance = {
   default: css({
-    color: 'var(--button-default-color)',
-    backgroundColor: 'var(--button-default-background)',
+    color: font('text'),
+    backgroundColor: background('neutral'),
 
     ':hover': {
-      color: 'var(--button-default-color-hover)',
-      backgroundColor: 'var(--button-default-background-hover)',
+      backgroundColor: background('neutral.hover'),
     },
 
     ':active': {
-      color: 'var(--button-default-color-active)',
-      backgroundColor: 'var(--button-default-background-active)',
+      backgroundColor: background('neutral.active'),
     },
   }),
   error: css({
-    color: 'var(--button-error-color)',
-    backgroundColor: 'var(--button-error-background)',
+    backgroundColor: background('error.bold'),
 
     ':hover': {
-      color: 'var(--button-error-color-hover)',
-      backgroundColor: 'var(--button-error-background-hover)',
+      backgroundColor: background('error.bold.hover'),
     },
 
     ':active': {
-      color: 'var(--button-error-color-active)',
-      backgroundColor: 'var(--button-error-background-active)',
+      backgroundColor: background('error.bold.active'),
     },
   }),
   help: css({
-    color: 'var(--button-help-color)',
-    backgroundColor: 'var(--button-help-background)',
+    backgroundColor: background('help.bold'),
 
     ':hover': {
-      color: 'var(--button-help-color-hover)',
-      backgroundColor: 'var(--button-help-background-hover)',
+      backgroundColor: background('help.bold.hover'),
     },
 
     ':active': {
-      color: 'var(--button-help-color-active)',
-      backgroundColor: 'var(--button-help-background-active)',
+      backgroundColor: background('help.bold.active'),
     },
   }),
   info: css({
-    color: 'var(--button-info-color)',
-    backgroundColor: 'var(--button-info-background)',
+    backgroundColor: background('info.bold'),
 
     ':hover': {
-      color: 'var(--button-info-color-hover)',
-      backgroundColor: 'var(--button-info-background-hover)',
+      backgroundColor: background('info.bold.hover'),
     },
 
     ':active': {
-      color: 'var(--button-info-color-active)',
-      backgroundColor: 'var(--button-info-background-active)',
+      backgroundColor: background('info.bold.active'),
     },
   }),
   success: css({
-    color: 'var(--button-success-color)',
-    backgroundColor: 'var(--button-success-background)',
+    backgroundColor: background('success.bold'),
 
     ':hover': {
-      color: 'var(--button-success-color-hover)',
-      backgroundColor: 'var(--button-success-background-hover)',
+      backgroundColor: background('success.bold.hover'),
     },
 
     ':active': {
-      color: 'var(--button-success-color-active)',
-      backgroundColor: 'var(--button-success-background-active)',
+      backgroundColor: background('success.bold.active'),
     },
   }),
   warning: css({
-    color: 'var(--button-warning-color)',
-    backgroundColor: 'var(--button-warning-background)',
+    backgroundColor: background('warning.bold'),
 
     ':hover': {
-      color: 'var(--button-warning-color-hover)',
-      backgroundColor: 'var(--button-warning-background-hover)',
+      backgroundColor: background('warning.bold.hover'),
     },
 
     ':active': {
-      color: 'var(--button-warning-color-active)',
-      backgroundColor: 'var(--button-warning-background-active)',
+      backgroundColor: background('warning.bold.active'),
     },
   }),
 }

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { B200, N0, N200, N40 } from '@pisagor/core/colors'
+import { background, border, font } from '@pisagor/core/tokens'
 
 export const Root = styled.div({
   position: 'relative',
@@ -16,7 +16,7 @@ export const Search = styled.div({
     position: 'absolute',
     top: 7,
     left: 8,
-    color: N200,
+    color: font('subtlest'),
   },
 })
 
@@ -29,13 +29,13 @@ export const SearchInput = styled.input({
   borderRadius: 5,
   fontSize: 14,
   lineHeight: 20,
-  color: N200,
-  border: `2px solid ${N40}`,
+  color: font('subtlest'),
+  border: `2px solid ${border('neutral')}`,
   boxShadow: 'none',
-  backgroundColor: N0,
+  backgroundColor: background(),
 
   ':focus': {
-    boxShadow: `0 0 0 2px ${B200}`,
+    boxShadow: `0 0 0 2px ${background('info')}`,
     borderColor: 'transparent',
   },
 })
@@ -46,7 +46,7 @@ export const SearchResult = styled.div({
   left: 0,
   width: '100%',
   boxShadow: '0 4px 8px rgba(9, 30, 66, 0.25), 0 0 1px rgba(9, 30, 66, 0.31)',
-  backgroundColor: N0,
+  backgroundColor: background(),
   borderRadius: 3,
   overflow: 'hidden',
   marginTop: 8,

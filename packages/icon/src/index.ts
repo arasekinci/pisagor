@@ -1,3 +1,8 @@
-export type { IconProps } from './Icon.types'
+export type {
+  IconAppearance,
+  IconColor,
+  IconProps,
+  IconSize,
+} from './icon.types'
 
-export { default } from './Icon'
+export { default } from './icon'

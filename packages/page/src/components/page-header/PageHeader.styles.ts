@@ -1,5 +1,4 @@
 import styled from '@emotion/styled'
-import { N800 } from '@pisagor/core/colors'
 
 export const Root = styled.div({
   margin: '24px 0',
@@ -17,7 +16,6 @@ export const Title = styled.div({
 
   h1: {
     fontSize: '1.71429em',
-    color: N800,
     fontWeight: 500,
     outline: 2,
   },

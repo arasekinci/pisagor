@@ -63,13 +63,13 @@ const Drawer: React.FunctionComponent<DrawerProps> = ({
   const renderIcon = () => {
     switch (position) {
       case 'top':
-        return <Icon name="arrow_upward" label="Close drawer" size="small" />
+        return <Icon name="arrow-upward" label="Close drawer" size="small" />
       case 'right':
-        return <Icon name="arrow_forward" label="Close drawer" size="small" />
+        return <Icon name="arrow-forward" label="Close drawer" size="small" />
       case 'bottom':
-        return <Icon name="arrow_downward" label="Close drawer" size="small" />
+        return <Icon name="arrow-downward" label="Close drawer" size="small" />
       case 'left':
-        return <Icon name="arrow_back" label="Close drawer" size="small" />
+        return <Icon name="arrow-back" label="Close drawer" size="small" />
     }
   }
 

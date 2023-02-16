@@ -1,3 +1,3 @@
-export type { AlertProps } from './Alert.types'
+export type { AlertProps, AlertColor, AlertStatus } from './alert.types'
 
-export { default } from './Alert'
+export { default } from './alert'
