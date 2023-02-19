@@ -78,25 +78,25 @@ const DrawerPage: NextPage = () => {
           }}
         >
           <Button
-            appearance={position === 'left' ? 'info' : 'default'}
+            status={position === 'left' ? 'info' : 'neutral'}
             onClick={() => setPosition('left')}
           >
             Left
           </Button>
           <Button
-            appearance={position === 'right' ? 'info' : 'default'}
+            status={position === 'right' ? 'info' : 'neutral'}
             onClick={() => setPosition('right')}
           >
             Right
           </Button>
           <Button
-            appearance={position === 'top' ? 'info' : 'default'}
+            status={position === 'top' ? 'info' : 'neutral'}
             onClick={() => setPosition('top')}
           >
             Top
           </Button>
           <Button
-            appearance={position === 'bottom' ? 'info' : 'default'}
+            status={position === 'bottom' ? 'info' : 'neutral'}
             onClick={() => setPosition('bottom')}
           >
             Bottom
@@ -117,31 +117,31 @@ const DrawerPage: NextPage = () => {
           }}
         >
           <Button
-            appearance={size === 'narrow' ? 'info' : 'default'}
+            status={size === 'narrow' ? 'info' : 'neutral'}
             onClick={() => setSize('narrow')}
           >
             Narrow
           </Button>
           <Button
-            appearance={size === 'medium' ? 'info' : 'default'}
+            status={size === 'medium' ? 'info' : 'neutral'}
             onClick={() => setSize('medium')}
           >
             Medium
           </Button>
           <Button
-            appearance={size === 'wide' ? 'info' : 'default'}
+            status={size === 'wide' ? 'info' : 'neutral'}
             onClick={() => setSize('wide')}
           >
             Wide
           </Button>
           <Button
-            appearance={size === 'extended' ? 'info' : 'default'}
+            status={size === 'extended' ? 'info' : 'neutral'}
             onClick={() => setSize('extended')}
           >
             Extended
           </Button>
           <Button
-            appearance={size === 'full' ? 'info' : 'default'}
+            status={size === 'full' ? 'info' : 'neutral'}
             onClick={() => setSize('full')}
           >
             Full

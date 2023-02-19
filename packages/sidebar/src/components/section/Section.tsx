@@ -1,5 +1,5 @@
 import type { SectionProps } from './Section.types'
-import * as Styles from './Section.styles'
+import * as styles from './Section.styles'
 
 export const Section: React.FunctionComponent<SectionProps> = ({
   children,
@@ -7,8 +7,8 @@ export const Section: React.FunctionComponent<SectionProps> = ({
   ...rest
 }) => {
   return (
-    <Styles.Root data-testid={testId} {...rest}>
+    <div className={styles.root} data-testid={testId} {...rest}>
       {children}
-    </Styles.Root>
+    </div>
   )
 }

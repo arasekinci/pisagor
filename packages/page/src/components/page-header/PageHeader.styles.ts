@@ -1,16 +1,16 @@
-import styled from '@emotion/styled'
+import { css } from '@emotion/css'
 
-export const Root = styled.div({
+export const root = css({
   margin: '24px 0',
 })
 
-export const Header = styled.div({
+export const header = css({
   display: 'flex',
   alignItems: 'flex-start',
   flexWrap: 'wrap',
 })
 
-export const Title = styled.div({
+export const title = css({
   maxWidth: '100%',
   flex: 1,
 
@@ -21,13 +21,13 @@ export const Title = styled.div({
   },
 })
 
-export const Actions = styled.div({
+export const actions = css({
   flex: '0 0 auto',
   maxWidth: '100%',
   paddingLeft: 32,
   whiteSpace: 'nowrap',
 })
 
-export const Body = styled.div({
+export const body = css({
   marginTop: 16,
 })

@@ -1,5 +1,5 @@
 import type { PageProps } from './Page.types'
-import * as Styled from './Page.styles'
+import * as styles from './Page.styles'
 
 const Page: React.FunctionComponent<PageProps> = ({
   children,
@@ -7,9 +7,9 @@ const Page: React.FunctionComponent<PageProps> = ({
   ...rest
 }) => {
   return (
-    <Styled.Root data-testid={testId} {...rest}>
+    <div className={styles.root} data-testid={testId} {...rest}>
       {children}
-    </Styled.Root>
+    </div>
   )
 }
 

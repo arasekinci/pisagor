@@ -2,8 +2,8 @@ import React, { useId } from 'react'
 import { classnames } from 'begonya/functions'
 import { Label } from '@pisagor/form'
 
-import type { InputProps } from './Input.types'
-import * as styles from './Input.styles'
+import type { InputProps } from './input.types'
+import * as styles from './input.styles'
 
 const Input: React.ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
   {

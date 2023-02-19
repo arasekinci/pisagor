@@ -73,7 +73,7 @@ const PopupPage: NextPage = () => {
                 placement={name}
                 trigger={(props) => (
                   <Button
-                    appearance={active ? 'info' : 'default'}
+                    status={active ? 'info' : 'neutral'}
                     onClick={() => setPlacement(active ? null : name)}
                     {...props}
                   >

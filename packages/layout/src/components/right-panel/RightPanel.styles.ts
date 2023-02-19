@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { background } from '@pisagor/core/tokens'
+import token from '@pisagor/core/tokens'
 
 import type { RightPanelPosition } from './RightPanel.types'
 
@@ -14,5 +14,5 @@ export const Root = styled.div<{
   height: position === 'fixed' ? '100%' : 'auto',
   transition: 'width 300ms cubic-bezier(0.2,0,0,1) 0s',
   zIndex: 4,
-  backgroundColor: background('neutral'),
+  backgroundColor: token('background.status.neutral'),
 }))

@@ -1,6 +1,6 @@
-import styled from '@emotion/styled'
+import { css } from '@emotion/css'
 
-export const Root = styled.div({
+export const root = css({
   outline: 'none',
   display: 'grid',
   height: ' 100vh',

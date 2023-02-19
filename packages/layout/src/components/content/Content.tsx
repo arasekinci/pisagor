@@ -1,5 +1,5 @@
 import type { ContentProps } from './Content.types'
-import * as Styled from './Content.styles'
+import * as styles from './Content.styles'
 
 export const Content: React.FunctionComponent<ContentProps> = ({
   children,
@@ -7,8 +7,12 @@ export const Content: React.FunctionComponent<ContentProps> = ({
   ...rest
 }) => {
   return (
-    <Styled.Root data-testid={testId && `${testId}-content`} {...rest}>
+    <div
+      className={styles.root}
+      data-testid={testId && `${testId}-content`}
+      {...rest}
+    >
       {children}
-    </Styled.Root>
+    </div>
   )
 }

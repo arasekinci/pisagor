@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import { background, border } from '@pisagor/core/tokens'
+import token from '@pisagor/core/tokens'
 
 export const root = css({
   width: '100%',
@@ -19,8 +19,8 @@ export const textarea = css({
   height: '6em',
   borderRadius: 3,
   outline: '0',
-  border: `2px solid ${border('neutral')}`,
-  backgroundColor: background('neutral'),
+  border: `2px solid ${token('border.status.neutral')}`,
+  backgroundColor: token('background.status.neutral'),
   boxSizing: 'border-box',
   pointerEvents: 'auto',
   wordWrap: 'break-word',
@@ -28,12 +28,12 @@ export const textarea = css({
   resize: 'none',
 
   ':hover': {
-    backgroundColor: background('neutral.hover'),
+    backgroundColor: token('background.status.neutral.hover'),
   },
 
   ':focus': {
-    backgroundColor: background('neutral.active'),
-    borderColor: background('neutral.bold'),
+    backgroundColor: token('background.status.neutral.active'),
+    borderColor: token('background.status.neutral.bold'),
   },
 })
 

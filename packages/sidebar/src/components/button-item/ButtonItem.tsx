@@ -1,5 +1,5 @@
 import type { ButtonItemProps } from './ButtonItem.types'
-import * as Styles from './ButtonItem.styles'
+import * as styles from './ButtonItem.styles'
 
 export const ButtonItem: React.FunctionComponent<ButtonItemProps> = ({
   children,
@@ -7,8 +7,8 @@ export const ButtonItem: React.FunctionComponent<ButtonItemProps> = ({
   ...rest
 }) => {
   return (
-    <Styles.Root data-testid={testId} {...rest}>
+    <div className={styles.root} data-testid={testId} {...rest}>
       {children}
-    </Styles.Root>
+    </div>
   )
 }

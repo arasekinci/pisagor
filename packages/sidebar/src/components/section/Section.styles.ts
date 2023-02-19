@@ -1,5 +1,5 @@
-import styled from '@emotion/styled'
+import { css } from '@emotion/css'
 
-export const Root = styled.div({
+export const root = css({
   margin: '24px 0',
 })

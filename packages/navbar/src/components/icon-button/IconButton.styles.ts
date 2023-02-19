@@ -1,9 +1,9 @@
-import styled from '@emotion/styled'
-import { background, font } from '@pisagor/core/tokens'
+import { css } from '@emotion/css'
+import token from '@pisagor/core/tokens'
 
-export const Root = styled.button({
+export const root = css({
   position: 'relative',
-  color: font('text'),
+  color: token('font.text'),
   alignItems: 'baseline',
   borderWidth: 0,
   borderRadius: '100%',
@@ -28,13 +28,13 @@ export const Root = styled.button({
   backgroundColor: 'transparent',
 
   ':hover': {
-    color: font('info'),
-    backgroundColor: background('info'),
+    color: token('font.status.info'),
+    backgroundColor: token('background.status.info'),
   },
 
   ':focus': {
-    color: font('info'),
-    backgroundColor: background('info'),
-    boxShadow: `0 0 0 2px ${background('info.bold.active')}`,
+    color: token('font.status.info'),
+    backgroundColor: token('background.status.info'),
+    boxShadow: `0 0 0 2px ${token('background.status.info.bold.active')}`,
   },
 })

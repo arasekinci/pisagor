@@ -1,14 +1,17 @@
 import { FocusEventHandler, useState } from 'react'
+import { classnames } from 'begonya/functions'
 import Icon from '@pisagor/icon'
+import Input from '@pisagor/input'
 
 import type { SearchProps } from './Search.types'
-import * as Styles from './Search.styles'
+import * as styles from './Search.styles'
 
 export const Search: React.FunctionComponent<SearchProps> = ({
-  containerClassName,
   children,
-  onFocus,
+  containerClassName,
   onBlur,
+  onFocus,
+  testId,
   ...rest
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -30,21 +33,25 @@ export const Search: React.FunctionComponent<SearchProps> = ({
   }
 
   return (
-    <Styles.Root
-      className={containerClassName}
+    <div
+      className={classnames(styles.root, containerClassName)}
+      data-testid={`${testId}-search`}
       style={{ width: isOpen ? '100%' : 200 }}
     >
-      <Styles.Search>
+      <div className={styles.search}>
         <Icon name="search" size={18} />
-        <Styles.SearchInput
+        <Input
+          className={styles.searchInput}
+          size="small"
           placeholder="Search"
           maxLength={500}
+          data-testid={`${testId}-search-input`}
           onFocus={handleFocus}
           onBlur={handleBlur}
           {...rest}
         />
-      </Styles.Search>
-      {isOpen && <Styles.SearchResult>{children}</Styles.SearchResult>}
-    </Styles.Root>
+      </div>
+      {isOpen && <div className={styles.searchResult}>{children}</div>}
+    </div>
   )
 }

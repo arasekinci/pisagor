@@ -1,44 +1,41 @@
-import styled from '@emotion/styled'
-import { background, border, font } from '@pisagor/core/tokens'
+import { css } from '@emotion/css'
+import token from '@pisagor/core/tokens'
 
-import Anchor from '@/components/anchor'
-import Image from '@/components/image'
-
-export const Root = styled(Anchor)({
+export const root = css({
   display: 'block',
   minHeight: '100%',
-  background: background(),
-  border: `1px solid ${border()}`,
-  boxShadow: '0 2px 4px rgb(9 30 66 / 10%)',
+  background: token('background'),
+  border: `1px solid ${token('border')}`,
   overflow: 'hidden',
   borderRadius: 4,
   boxSizing: 'border-box',
 
   ':hover': {
     textDecoration: 'none',
-    boxShadow: '0 8px 16px -3px rgba(9, 30, 66, 0.2)',
+    boxShadow: '0 6px 12px -2px rgba(9, 30, 66, 0.15)',
   },
 })
 
-export const Figure = styled(Image)({
+export const figure = css({
   width: '100%',
   height: 'auto',
-  backgroundColor: background('neutral'),
+  background: '#f4f5f7',
 })
 
-export const Body = styled.div({
+export const body = css({
   padding: 24,
 
-  p: {
-    fontSize: 15,
+  h3: {
+    color: token('font.text'),
   },
 
-  'p:not([class])': {
-    color: font('subtlest'),
+  p: {
+    color: token('font.subtlest'),
+    fontSize: 15,
   },
 })
 
-export const Title = styled.h3({
+export const title = css({
   fontSize: '1.4em',
   fontWeight: 500,
   margin: 0,

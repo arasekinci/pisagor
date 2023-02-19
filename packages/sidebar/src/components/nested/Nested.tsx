@@ -1,5 +1,5 @@
 import type { NestedProps } from './Nested.types'
-import * as Styles from './Nested.styles'
+import * as styles from './Nested.styles'
 
 export const Nested: React.FunctionComponent<NestedProps> = ({
   children,
@@ -7,8 +7,8 @@ export const Nested: React.FunctionComponent<NestedProps> = ({
   ...rest
 }) => {
   return (
-    <Styles.Root data-testid={testId} {...rest}>
+    <div className={styles.root} data-testid={testId} {...rest}>
       {children}
-    </Styles.Root>
+    </div>
   )
 }

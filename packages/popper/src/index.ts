@@ -2,6 +2,6 @@ export type {
   PopperPlacement,
   PopperPosition,
   PopperProps,
-} from './Popper.types'
+} from './popper.types'
 
-export { default } from './Popper'
+export { default } from './popper'

@@ -1,7 +1,7 @@
-import styled from '@emotion/styled'
-import { background, font } from '@pisagor/core/tokens'
+import { css } from '@emotion/css'
+import token from '@pisagor/core/tokens'
 
-export const Root = styled.div({
+export const root = css({
   display: 'flex',
   boxSizing: 'border-box',
   width: '100%',
@@ -18,12 +18,12 @@ export const Root = styled.div({
   borderRadius: 3,
 
   ':hover': {
-    color: font('text'),
-    backgroundColor: background('neutral'),
+    color: token('font.text'),
+    backgroundColor: token('background.status.neutral'),
   },
 
   ':focus': {
     backgroundColor: 'transparent',
-    color: font('text'),
+    color: token('font.text'),
   },
 })

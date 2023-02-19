@@ -1,5 +1,5 @@
 import type { MainProps } from './Main.types'
-import * as Styled from './Main.styles'
+import * as styles from './Main.styles'
 
 export const Main: React.FunctionComponent<MainProps> = ({
   children,
@@ -7,8 +7,12 @@ export const Main: React.FunctionComponent<MainProps> = ({
   ...rest
 }) => {
   return (
-    <Styled.Root data-testid={testId && `${testId}-main`} {...rest}>
+    <div
+      className={styles.root}
+      data-testid={testId && `${testId}-main`}
+      {...rest}
+    >
       {children}
-    </Styled.Root>
+    </div>
   )
 }

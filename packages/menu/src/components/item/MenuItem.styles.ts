@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import { background, font } from '@pisagor/core/tokens'
+import token from '@pisagor/core/tokens'
 import { FONT_SIZE, GRID_SIZE } from '@pisagor/core/constants'
 
 export const root = css({
@@ -24,7 +24,7 @@ export const root = css({
 
   ':hover': {
     textDecoration: 'none',
-    backgroundColor: background('neutral.hover'),
+    backgroundColor: token('background.status.neutral.hover'),
   },
 })
 
@@ -35,11 +35,11 @@ export const root = css({
 //     color: 'currentColor',
 //   },
 //   ':hover': {
-//     backgroundColor: tokenfn('color.background.neutral.subtle:hover', N20),
+//     backgroundColor: tokenfn('color.background.status.neutral.subtle:hover', N20),
 //     color: 'currentColor',
 //   },
 //   ':active': {
-//     backgroundColor: tokenfn('color.background.neutral.subtle:active', N30),
+//     backgroundColor: tokenfn('color.background.status.neutral.subtle:active', N30),
 //     boxShadow: 'none',
 //     color: 'currentColor',
 //   },
@@ -90,7 +90,7 @@ export const title = css({
 
 export const description = css({
   marginTop: GRID_SIZE * 0.375,
-  color: font('subtlest'),
+  color: token('font.subtlest'),
   fontSize: 12,
 })
 

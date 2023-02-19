@@ -1,5 +1,5 @@
 import type { LayoutProps } from './Layout.types'
-import * as Styled from './Layout.styles'
+import * as styles from './Layout.styles'
 
 const Layout: React.FunctionComponent<LayoutProps> = ({
   children,
@@ -7,9 +7,9 @@ const Layout: React.FunctionComponent<LayoutProps> = ({
   ...rest
 }) => {
   return (
-    <Styled.Root data-testid={testId} {...rest}>
+    <div className={styles.root} data-testid={testId} {...rest}>
       {children}
-    </Styled.Root>
+    </div>
   )
 }
 

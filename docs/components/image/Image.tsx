@@ -16,6 +16,7 @@ const Image: React.FunctionComponent<ImageProps> = ({
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const imageRef = useRef<HTMLImageElement>(null)
   const classNames = classnames(
+    Styles.root,
     {
       loaded: !isLoading,
       loading: isLoading,
@@ -49,8 +50,9 @@ const Image: React.FunctionComponent<ImageProps> = ({
   }
 
   return (
-    <Styles.Root className={classNames}>
-      <Styles.Node
+    <div className={classNames}>
+      <img
+        className={Styles.node}
         ref={imageRef}
         width={width}
         height={height}
@@ -63,7 +65,7 @@ const Image: React.FunctionComponent<ImageProps> = ({
         })}
         {...rest}
       />
-    </Styles.Root>
+    </div>
   )
 }
 

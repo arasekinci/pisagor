@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import { background, border } from '@pisagor/core/tokens'
+import token from '@pisagor/core/tokens'
 
 export const root = css({
   position: 'relative',
@@ -8,6 +8,6 @@ export const root = css({
   alignItems: 'center',
   justifyContent: 'space-between',
   padding: '10px 16px',
-  backgroundColor: background('accent.neutral.lighter'),
-  border: `1px solid ${border()}`,
+  backgroundColor: token('background.accent.neutral'),
+  border: `1px solid ${token('border')}`,
 })

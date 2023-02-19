@@ -1,5 +1,5 @@
 import type { FooterProps } from './Footer.types'
-import * as Styles from './Footer.styles'
+import * as styles from './Footer.styles'
 
 export const Footer: React.FunctionComponent<FooterProps> = ({
   children,
@@ -7,8 +7,8 @@ export const Footer: React.FunctionComponent<FooterProps> = ({
   ...rest
 }) => {
   return (
-    <Styles.Root data-testid={testId} {...rest}>
+    <div className={styles.root} data-testid={testId} {...rest}>
       {children}
-    </Styles.Root>
+    </div>
   )
 }

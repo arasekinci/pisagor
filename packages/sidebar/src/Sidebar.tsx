@@ -1,5 +1,5 @@
 import type { SidebarProps } from './Sidebar.types'
-import * as Styles from './Sidebar.styles'
+import * as styles from './Sidebar.styles'
 
 const Sidebar: React.FunctionComponent<SidebarProps> = ({
   children,
@@ -7,9 +7,9 @@ const Sidebar: React.FunctionComponent<SidebarProps> = ({
   ...rest
 }) => {
   return (
-    <Styles.Root data-testid={testId} {...rest}>
+    <div className={styles.root} data-testid={testId} {...rest}>
       {children}
-    </Styles.Root>
+    </div>
   )
 }
 

@@ -1,0 +1,314 @@
+[
+  {
+    "name": "border.accent.blue",
+    "value": "var(--B600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.blue.light",
+    "value": "var(--B400)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.blue.dark",
+    "value": "var(--B800)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.green",
+    "value": "var(--G600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.green.light",
+    "value": "var(--G400)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.green.dark",
+    "value": "var(--G800)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.magenta",
+    "value": "var(--M600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.magenta.light",
+    "value": "var(--M400)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.magenta.dark",
+    "value": "var(--M800)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.neutral",
+    "value": "var(--N600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.neutral.light",
+    "value": "var(--N400)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.neutral.dark",
+    "value": "var(--N800)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.orange",
+    "value": "var(--O600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.orange.light",
+    "value": "var(--O400)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.orange.dark",
+    "value": "var(--O800)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.purple",
+    "value": "var(--P600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.purple.light",
+    "value": "var(--P400)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.purple.dark",
+    "value": "var(--P800)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.red",
+    "value": "var(--R600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.red.light",
+    "value": "var(--R400)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.red.dark",
+    "value": "var(--R800)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.teal",
+    "value": "var(--T600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.teal.light",
+    "value": "var(--T400)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.teal.dark",
+    "value": "var(--T800)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.yellow",
+    "value": "var(--Y600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.yellow.light",
+    "value": "var(--Y400)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.accent.yellow.dark",
+    "value": "var(--Y800)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.status.error",
+    "value": "var(--R600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.status.help",
+    "value": "var(--P600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.status.info",
+    "value": "var(--B600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.status.neutral",
+    "value": "var(--N600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.status.success",
+    "value": "var(--G600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.status.warning",
+    "value": "var(--Y600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.disabled",
+    "value": "var(--N200A)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.focus",
+    "value": "var(--B500)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.active",
+    "value": "var(--B700)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.bold",
+    "value": "var(--N600)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border.input",
+    "value": "var(--N300A)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "border",
+    "value": "var(--N300A)",
+    "attributes": {
+      "group": "border",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  }
+]

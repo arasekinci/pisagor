@@ -1,5 +1,5 @@
 import type { HeaderProps } from './Header.types'
-import * as Styles from './Header.styles'
+import * as styles from './Header.styles'
 
 export const Header: React.FunctionComponent<HeaderProps> = ({
   children,
@@ -7,8 +7,8 @@ export const Header: React.FunctionComponent<HeaderProps> = ({
   ...rest
 }) => {
   return (
-    <Styles.Root data-testid={testId} {...rest}>
+    <div className={styles.root} data-testid={testId} {...rest}>
       {children}
-    </Styles.Root>
+    </div>
   )
 }

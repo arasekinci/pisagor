@@ -1,0 +1,322 @@
+[
+  {
+    "name": "font.accent.blue.light",
+    "value": "var(--B600)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.blue",
+    "value": "var(--B800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.blue.dark",
+    "value": "var(--B1000)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.green.light",
+    "value": "var(--G600)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.green",
+    "value": "var(--G800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.green.dark",
+    "value": "var(--G1000)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.magenta.light",
+    "value": "var(--M600)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.magenta",
+    "value": "var(--M800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.magenta.dark",
+    "value": "var(--M1000)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.neutral.light",
+    "value": "var(--N600)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.neutral",
+    "value": "var(--N800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.neutral.dark",
+    "value": "var(--N1000)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.orange.light",
+    "value": "var(--O600)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.orange",
+    "value": "var(--O800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.orange.dark",
+    "value": "var(--O1000)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.purple.light",
+    "value": "var(--P600)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.purple",
+    "value": "var(--P800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.purple.dark",
+    "value": "var(--P1000)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.red.light",
+    "value": "var(--R600)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.red",
+    "value": "var(--R800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.red.dark",
+    "value": "var(--R1000)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.teal.light",
+    "value": "var(--T600)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.teal",
+    "value": "var(--T800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.teal.dark",
+    "value": "var(--T1000)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.yellow.light",
+    "value": "var(--Y600)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.yellow",
+    "value": "var(--Y800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.accent.yellow.dark",
+    "value": "var(--Y1000)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.status.error",
+    "value": "var(--R800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.status.help",
+    "value": "var(--P800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.status.info",
+    "value": "var(--B800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.status.neutral",
+    "value": "var(--N800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.status.success",
+    "value": "var(--G800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.status.warning",
+    "value": "var(--Y800)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.text:disabled",
+    "value": "var(--N400A)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.text",
+    "value": "var(--N1000)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.text.inverse",
+    "value": "var(--N0)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.subtle",
+    "value": "var(--N900)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.subtle.inverse",
+    "value": "var(--N100)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.subtlest",
+    "value": "var(--N700)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "font.subtlest.inverse",
+    "value": "var(--N400)",
+    "attributes": {
+      "group": "font",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  }
+]

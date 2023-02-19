@@ -20,10 +20,15 @@ body {
   }
 
   td {
-    min-width: 100px;
+    width: 120px;
     padding-top: 16px;
     padding-bottom: 16px;
     border-top: 1px solid var(--N300);
+    box-sizing: border-box;
+
+    &:nth-child(1) {
+      width: auto;
+    }
   }
 
   p {
@@ -37,6 +42,8 @@ body {
     display: block;
     border-radius: 3px;
     border: 1px solid var(--N300A);
+    background-color: var(--N0);
+    box-sizing: border-box;
   }
 }
 

@@ -1,9 +1,55 @@
 import { css } from '@emotion/css'
-import { background, font } from '@pisagor/core/tokens'
+import token, { palette } from '@pisagor/core/tokens'
+
+import type { ButtonColor } from './button.types'
+
+export const appearance = (color: ButtonColor, accent: boolean) => {
+  if (color === 'default') {
+    return css({
+      color: token('font.text'),
+      backgroundColor: palette(`neutral.200.alpha`),
+
+      ':hover': {
+        backgroundColor: palette(`neutral.300.alpha`),
+      },
+
+      ':active': {
+        backgroundColor: palette(`neutral.400.alpha`),
+      },
+    })
+  }
+
+  if (accent) {
+    return css({
+      color: token('font.text.inverse'),
+      backgroundColor: token(`background.accent.${color}.bold`),
+
+      ':hover': {
+        backgroundColor: token(`background.accent.${color}.bold.hover`),
+      },
+
+      ':active': {
+        backgroundColor: token(`background.accent.${color}.bold.active`),
+      },
+    })
+  }
+
+  return css({
+    color: token('font.text'),
+    backgroundColor: token(`background.accent.${color}`),
+
+    ':hover': {
+      backgroundColor: token(`background.accent.${color}.hover`),
+    },
+
+    ':active': {
+      backgroundColor: token(`background.accent.${color}.active`),
+    },
+  })
+}
 
 export const root = css({
-  color: font('text.inverse'),
-  alignItems: 'baseline',
+  alignItems: 'center',
   border: 0,
   margin: 0,
   boxSizing: 'border-box',
@@ -24,75 +70,9 @@ export const root = css({
   justifyContent: 'center',
 })
 
-export const appearance = {
-  default: css({
-    color: font('text'),
-    backgroundColor: background('neutral'),
-
-    ':hover': {
-      backgroundColor: background('neutral.hover'),
-    },
-
-    ':active': {
-      backgroundColor: background('neutral.active'),
-    },
-  }),
-  error: css({
-    backgroundColor: background('error.bold'),
-
-    ':hover': {
-      backgroundColor: background('error.bold.hover'),
-    },
-
-    ':active': {
-      backgroundColor: background('error.bold.active'),
-    },
-  }),
-  help: css({
-    backgroundColor: background('help.bold'),
-
-    ':hover': {
-      backgroundColor: background('help.bold.hover'),
-    },
-
-    ':active': {
-      backgroundColor: background('help.bold.active'),
-    },
-  }),
-  info: css({
-    backgroundColor: background('info.bold'),
-
-    ':hover': {
-      backgroundColor: background('info.bold.hover'),
-    },
-
-    ':active': {
-      backgroundColor: background('info.bold.active'),
-    },
-  }),
-  success: css({
-    backgroundColor: background('success.bold'),
-
-    ':hover': {
-      backgroundColor: background('success.bold.hover'),
-    },
-
-    ':active': {
-      backgroundColor: background('success.bold.active'),
-    },
-  }),
-  warning: css({
-    backgroundColor: background('warning.bold'),
-
-    ':hover': {
-      backgroundColor: background('warning.bold.hover'),
-    },
-
-    ':active': {
-      backgroundColor: background('warning.bold.active'),
-    },
-  }),
-}
+export const text = css({
+  margin: '0 4px',
+})
 
 export const size = {
   large: css({
@@ -100,20 +80,20 @@ export const size = {
     minWidth: '40px',
     minHeight: '40px',
     lineHeight: '40px',
-    padding: '0 16px',
+    padding: '0 8px',
   }),
   medium: css({
     fontSize: 14,
     minWidth: '32px',
     minHeight: '32px',
     lineHeight: '32px',
-    padding: '0 12px',
+    padding: '0 6px',
   }),
   small: css({
     fontSize: 13,
     minWidth: '24px',
     minHeight: '24px',
     lineHeight: '24px',
-    padding: '0 8px',
+    padding: '0 4px',
   }),
 }

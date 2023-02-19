@@ -1,6 +1,6 @@
-import { InputHTMLAttributes } from 'react'
+import type { InputProps } from '@pisagor/input'
 
-export interface SearchProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface SearchProps extends InputProps {
   /**
    * The prop description will be added here.
    */

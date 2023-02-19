@@ -1,37 +1,38 @@
 import { css } from '@emotion/css'
-import { border, background } from '@pisagor/core/tokens'
+import token from '@pisagor/core/tokens'
 
 export const root = css({
   width: '100%',
   fontSize: '1em',
-
-  ':not(:first-child)': {
-    marginTop: 8,
-  },
 })
 
 export const input = css({
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+  fontFamily: token('font.family'),
   fontSize: 'inherit',
   width: '100%',
   display: 'block',
   borderRadius: 3,
   outline: '0',
-  border: `2px solid ${border('neutral')}`,
-  backgroundColor: background('neutral'),
+  border: `2px solid ${token('border.input')}`,
+  backgroundColor: token('background.input'),
   boxSizing: 'border-box',
   pointerEvents: 'auto',
   wordWrap: 'break-word',
   transition: '200ms',
 
   ':hover': {
-    backgroundColor: background('neutral.hover'),
+    borderColor: token('border.input.hover'),
+    backgroundColor: token('background.input.hover'),
   },
 
   ':focus': {
-    backgroundColor: background('neutral.active'),
-    borderColor: border('neutral'),
+    borderColor: token('border.input.focus'),
+    backgroundColor: token('background.input.focus'),
+  },
+
+  ':disabled': {
+    borderColor: token('border.input.disabled'),
+    backgroundColor: token('background.input.disabled'),
   },
 })
 
@@ -45,7 +46,7 @@ export const size = {
     padding: '0 8px',
   }),
   small: css({
-    height: '28px',
+    height: '32px',
     padding: '0 4px',
   }),
 }

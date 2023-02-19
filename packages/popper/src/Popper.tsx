@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { createPopper } from '@popperjs/core'
 import Portal from '@pisagor/portal'
 
-import type { PopperProps } from './Popper.types'
+import type { PopperProps } from './popper.types'
 
 const Popper: React.FunctionComponent<PopperProps> = ({
   children,

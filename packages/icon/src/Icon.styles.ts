@@ -1,11 +1,11 @@
 import { css } from '@emotion/css'
-import { icon } from '@pisagor/core/tokens'
+import token from '@pisagor/core/tokens'
 
 import { sizes } from './core/constants'
 import type { IconAppearance, IconColor, IconSize } from './icon.types'
 
 export const root = css({
-  color: icon(),
+  color: 'currentcolor',
   fontFamily: 'Material Icons',
   fontWeight: 'normal',
   fontStyle: 'normal',
@@ -22,12 +22,12 @@ export const root = css({
 
 export const appearance = (str: IconAppearance) =>
   css({
-    color: icon(str),
+    color: token(`icon.status.${str}`),
   })
 
 export const color = (str: IconColor) =>
   css({
-    color: icon(`accent.${str}`),
+    color: token(`icon.accent.${str}`),
   })
 
 export const size = (size: IconSize) =>

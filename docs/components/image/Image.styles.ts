@@ -1,7 +1,7 @@
-import styled from '@emotion/styled'
-import { background } from '@pisagor/core/tokens'
+import { css } from '@emotion/css'
+import token from '@pisagor/core/tokens'
 
-export const Node = styled.img({
+export const node = css({
   minWidth: '100%',
   minHeight: '100%',
   maxWidth: '100%',
@@ -18,7 +18,7 @@ export const Node = styled.img({
   },
 })
 
-export const Root = styled.div({
+export const root = css({
   position: 'relative',
   maxWidth: '100%',
   width: 'initial',
@@ -34,7 +34,7 @@ export const Root = styled.div({
   boxSizing: 'border-box',
 
   '&.loading': {
-    backgroundColor: background('neutral'),
+    backgroundColor: token('background.status.neutral'),
 
     '&:after': {
       content: '""',
@@ -43,8 +43,8 @@ export const Root = styled.div({
       width: '100%',
       height: '100%',
       transform: 'translateX(-100%)',
-      background: `linear-gradient(90deg, transparent, ${background(
-        'neutral.active'
+      background: `linear-gradient(90deg, transparent, ${token(
+        'background.status.neutral.active'
       )}, transparent)`,
       animation: 'skeleton 1s infinite',
     },
@@ -55,7 +55,7 @@ export const Root = styled.div({
   },
 
   '&.broken-image': {
-    backgroundColor: background('neutral'),
+    backgroundColor: token('background.status.neutral'),
     backgroundPosition: 'center center',
     backgroundImage: "url('/images/broken-image.svg')",
     backgroundRepeat: 'no-repeat',

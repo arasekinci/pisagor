@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import { Row, Column } from '@pisagor/gridview'
 import Badge from '@pisagor/badge'
 import Icon from '@pisagor/icon'
 

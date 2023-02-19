@@ -1,7 +1,4 @@
-export * from './background'
-export * from './border'
-export * from './font'
-export * from './icon'
 export * from './layer'
 export * from './palette'
-export * from './shadow'
+
+export { token as default } from './token'

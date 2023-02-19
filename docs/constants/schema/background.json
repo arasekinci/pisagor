@@ -1,0 +1,730 @@
+[
+  {
+    "name": "background.accent.neutral.lighter",
+    "value": "var(--N100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.neutral.light",
+    "value": "var(--N200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.neutral",
+    "value": "var(--N300)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.neutral.bold",
+    "value": "var(--N600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.neutral.bolder",
+    "value": "var(--N800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.blue.lighter",
+    "value": "var(--B100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.blue.light",
+    "value": "var(--B200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.blue",
+    "value": "var(--B400)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.blue.bold",
+    "value": "var(--B600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.blue.bolder",
+    "value": "var(--B800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.red.lighter",
+    "value": "var(--R100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.red.light",
+    "value": "var(--R200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.red",
+    "value": "var(--R400)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.red.bold",
+    "value": "var(--R600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.red.bolder",
+    "value": "var(--R800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.orange.lighter",
+    "value": "var(--O100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.orange.light",
+    "value": "var(--O200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.orange",
+    "value": "var(--O400)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.orange.bold",
+    "value": "var(--O600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.orange.bolder",
+    "value": "var(--O800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.yellow.lighter",
+    "value": "var(--Y100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.yellow.light",
+    "value": "var(--Y200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.yellow",
+    "value": "var(--Y400)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.yellow.bold",
+    "value": "var(--Y600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.yellow.bolder",
+    "value": "var(--Y800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.green.lighter",
+    "value": "var(--G100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.green.light",
+    "value": "var(--G200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.green",
+    "value": "var(--G400)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.green.bold",
+    "value": "var(--G600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.green.bolder",
+    "value": "var(--G800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.purple.lighter",
+    "value": "var(--P100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.purple.light",
+    "value": "var(--P200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.purple",
+    "value": "var(--P400)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.purple.bold",
+    "value": "var(--P600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.purple.bolder",
+    "value": "var(--P800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.teal.lighter",
+    "value": "var(--T100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.teal.light",
+    "value": "var(--T200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.teal",
+    "value": "var(--T400)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.teal.bold",
+    "value": "var(--T600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.teal.bolder",
+    "value": "var(--T800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.magenta.lighter",
+    "value": "var(--M100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.magenta.light",
+    "value": "var(--M200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.magenta",
+    "value": "var(--M400)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.magenta.bold",
+    "value": "var(--M600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.accent.magenta.bolder",
+    "value": "var(--M800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.neutral",
+    "value": "var(--N200A)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.neutral.hover",
+    "value": "var(--N300A)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.neutral.active",
+    "value": "var(--N400A)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.neutral.bold",
+    "value": "var(--N600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.neutral.bold.hover",
+    "value": "var(--N700)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.neutral.bold.active",
+    "value": "var(--N800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.error",
+    "value": "var(--R100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.error.hover",
+    "value": "var(--R200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.error.active",
+    "value": "var(--R300)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.error.bold",
+    "value": "var(--R600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.error.bold.hover",
+    "value": "var(--R700)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.error.bold.active",
+    "value": "var(--R800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.info",
+    "value": "var(--B100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.info.hover",
+    "value": "var(--B200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.info.active",
+    "value": "var(--B300)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.info.bold",
+    "value": "var(--B600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.info.bold.hover",
+    "value": "var(--B700)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.info.bold.active",
+    "value": "var(--B800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.help",
+    "value": "var(--P100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.help.hover",
+    "value": "var(--P200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.help.active",
+    "value": "var(--P300)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.help.bold",
+    "value": "var(--P600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.help.bold.hover",
+    "value": "var(--P700)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.help.bold.active",
+    "value": "var(--P800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.success",
+    "value": "var(--G100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.success.hover",
+    "value": "var(--G200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.success.active",
+    "value": "var(--G300)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.success.bold",
+    "value": "var(--G600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.success.bold.hover",
+    "value": "var(--G700)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.success.bold.active",
+    "value": "var(--G800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.warning",
+    "value": "var(--Y100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.warning.hover",
+    "value": "var(--Y200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.warning.active",
+    "value": "var(--Y300)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.warning.bold",
+    "value": "var(--Y600)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.warning.bold.hover",
+    "value": "var(--Y700)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.status.warning.bold.active",
+    "value": "var(--Y800)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.button",
+    "value": "var(--N0)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.button.hover",
+    "value": "var(--N100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.button.active",
+    "value": "var(--N200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.input",
+    "value": "var(--N0)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.input.hover",
+    "value": "var(--N100)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.input.active",
+    "value": "var(--N200)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.blanket",
+    "value": "var(--N500A)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.skeleton",
+    "value": "var(--N200A)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background.inverse",
+    "value": "var(--N1000)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "background",
+    "value": "var(--N0)",
+    "attributes": {
+      "group": "background",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  }
+]

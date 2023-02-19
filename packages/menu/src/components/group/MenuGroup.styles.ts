@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import { background, font } from '@pisagor/core/tokens'
+import token from '@pisagor/core/tokens'
 
 export const root = css({
   flexShrink: 1,
@@ -8,11 +8,11 @@ export const root = css({
 })
 
 export const separator = css({
-  borderTop: `2px solid ${background('neutral')}`,
+  borderTop: `2px solid ${token('background.status.neutral')}`,
 })
 
 export const title = css({
-  color: font('subtlest'),
+  color: token('font.subtlest'),
   fontSize: 11,
   fontWeight: 700,
   lineHeight: 1.45455,

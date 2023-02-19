@@ -1,5 +1,5 @@
 import type { ContentProps } from './Content.types'
-import * as Styles from './Content.styles'
+import * as styles from './Content.styles'
 
 export const Content: React.FunctionComponent<ContentProps> = ({
   children,
@@ -7,8 +7,8 @@ export const Content: React.FunctionComponent<ContentProps> = ({
   ...rest
 }) => {
   return (
-    <Styles.Root data-testid={testId} {...rest}>
+    <div className={styles.root} data-testid={testId} {...rest}>
       {children}
-    </Styles.Root>
+    </div>
   )
 }

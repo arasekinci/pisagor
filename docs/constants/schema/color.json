@@ -1,0 +1,778 @@
+[
+  {
+    "name": "blue.100",
+    "value": "var(--B100)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "blue.200",
+    "value": "var(--B200)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "blue.300",
+    "value": "var(--B300)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "blue.400",
+    "value": "var(--B400)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "blue.500",
+    "value": "var(--B500)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "blue.600",
+    "value": "var(--B600)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "blue.700",
+    "value": "var(--B700)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "blue.800",
+    "value": "var(--B800)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "blue.900",
+    "value": "var(--B900)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "blue.1000",
+    "value": "var(--B1000)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "green.100",
+    "value": "var(--G100)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "green.200",
+    "value": "var(--G200)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "green.300",
+    "value": "var(--G300)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "green.400",
+    "value": "var(--G400)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "green.500",
+    "value": "var(--G500)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "green.600",
+    "value": "var(--G600)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "green.700",
+    "value": "var(--G700)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "green.800",
+    "value": "var(--G800)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "green.900",
+    "value": "var(--G900)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "green.1000",
+    "value": "var(--G1000)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "magenta.100",
+    "value": "var(--M100)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "magenta.200",
+    "value": "var(--M200)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "magenta.300",
+    "value": "var(--M300)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "magenta.400",
+    "value": "var(--M400)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "magenta.500",
+    "value": "var(--M500)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "magenta.600",
+    "value": "var(--M600)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "magenta.700",
+    "value": "var(--M700)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "magenta.800",
+    "value": "var(--M800)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "magenta.900",
+    "value": "var(--M900)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "magenta.1000",
+    "value": "var(--M1000)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.0",
+    "value": "var(--N0)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.100",
+    "value": "var(--N100)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.100.alpha",
+    "value": "var(--N100A)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.200",
+    "value": "var(--N200)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.200.alpha",
+    "value": "var(--MN00A)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.300",
+    "value": "var(--N300)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.300.alpha",
+    "value": "var(--N300A)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.400",
+    "value": "var(--N400)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.400.alpha",
+    "value": "var(--N400A)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.500",
+    "value": "var(--N500)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.500.alpha",
+    "value": "var(--N500A)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.600",
+    "value": "var(--N600)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.700",
+    "value": "var(--N700)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.800",
+    "value": "var(--N800)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.900",
+    "value": "var(--N900)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.1000",
+    "value": "var(--N1000)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "neutral.1100",
+    "value": "var(--N1100)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "orange.100",
+    "value": "var(--O100)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "orange.200",
+    "value": "var(--O200)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "orange.300",
+    "value": "var(--O300)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "orange.400",
+    "value": "var(--O400)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "orange.500",
+    "value": "var(--O500)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "orange.600",
+    "value": "var(--O600)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "orange.700",
+    "value": "var(--O700)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "orange.800",
+    "value": "var(--O800)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "orange.900",
+    "value": "var(--O900)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "orange.1000",
+    "value": "var(--O1000)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "purple.100",
+    "value": "var(--P100)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "purple.200",
+    "value": "var(--P200)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "purple.300",
+    "value": "var(--P300)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "purple.400",
+    "value": "var(--P400)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "purple.500",
+    "value": "var(--P500)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "purple.600",
+    "value": "var(--P600)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "purple.700",
+    "value": "var(--P700)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "purple.800",
+    "value": "var(--P800)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "purple.900",
+    "value": "var(--P900)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "purple.1000",
+    "value": "var(--P1000)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "red.100",
+    "value": "var(--R100)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "red.200",
+    "value": "var(--R200)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "red.300",
+    "value": "var(--R300)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "red.400",
+    "value": "var(--R400)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "red.500",
+    "value": "var(--R500)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "red.600",
+    "value": "var(--R600)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "red.700",
+    "value": "var(--R700)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "red.800",
+    "value": "var(--R800)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "red.900",
+    "value": "var(--R900)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "red.1000",
+    "value": "var(--R1000)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "teal.100",
+    "value": "var(--T100)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "teal.200",
+    "value": "var(--T200)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "teal.300",
+    "value": "var(--T300)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "teal.400",
+    "value": "var(--T400)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "teal.500",
+    "value": "var(--T500)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "teal.600",
+    "value": "var(--T600)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "teal.700",
+    "value": "var(--T700)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "teal.800",
+    "value": "var(--T800)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "teal.900",
+    "value": "var(--T900)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "teal.1000",
+    "value": "var(--T1000)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "yellow.100",
+    "value": "var(--Y100)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "yellow.200",
+    "value": "var(--Y200)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "yellow.300",
+    "value": "var(--Y300)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "yellow.400",
+    "value": "var(--Y400)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "yellow.500",
+    "value": "var(--Y500)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "yellow.600",
+    "value": "var(--Y600)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "yellow.700",
+    "value": "var(--Y700)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "yellow.800",
+    "value": "var(--Y800)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "yellow.900",
+    "value": "var(--Y900)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "yellow.1000",
+    "value": "var(--Y1000)",
+    "attributes": {
+      "group": "color",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  }
+]

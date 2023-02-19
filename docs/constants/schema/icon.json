@@ -1,0 +1,282 @@
+[
+  {
+    "name": "icon.accent.blue.light",
+    "value": "var(--B500)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.blue",
+    "value": "var(--B700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.blue.dark",
+    "value": "var(--B900)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.green.light",
+    "value": "var(--G500)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.green",
+    "value": "var(--G700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.green.dark",
+    "value": "var(--G900)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.magenta.light",
+    "value": "var(--M500)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.magenta",
+    "value": "var(--M700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.magenta.dark",
+    "value": "var(--M900)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.neutral.light",
+    "value": "var(--N500)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.neutral",
+    "value": "var(--N700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.neutral.dark",
+    "value": "var(--N900)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.orange.light",
+    "value": "var(--O500)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.orange",
+    "value": "var(--O700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.orange.dark",
+    "value": "var(--O900)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.purple.light",
+    "value": "var(--P500)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.purple",
+    "value": "var(--P700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.purple.dark",
+    "value": "var(--P900)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.red.light",
+    "value": "var(--R500)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.red",
+    "value": "var(--R700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.red.dark",
+    "value": "var(--R900)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.teal.light",
+    "value": "var(--T500)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.teal",
+    "value": "var(--T700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.teal.dark",
+    "value": "var(--T900)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.yellow.light",
+    "value": "var(--Y500)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.yellow",
+    "value": "var(--Y700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.accent.yellow.dark",
+    "value": "var(--Y900)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.status.error",
+    "value": "var(--R700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.status.help",
+    "value": "var(--P700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.status.info",
+    "value": "var(--B700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.status.neutral",
+    "value": "var(--N700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.status.success",
+    "value": "var(--G700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.status.warning",
+    "value": "var(--Y700)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon.inverse",
+    "value": "var(--N0)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  },
+  {
+    "name": "icon",
+    "value": "var(--N800)",
+    "attributes": {
+      "group": "icon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+  }
+]

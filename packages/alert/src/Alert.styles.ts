@@ -1,24 +1,24 @@
 import { css } from '@emotion/css'
-import { background, font } from '@pisagor/core/tokens'
+import token from '@pisagor/core/tokens'
 
 import type { AlertColor } from './alert.types'
 
 export const appearance = (color: AlertColor, accent: boolean) => {
   if (accent) {
     return css({
-      color: font('text.inverse'),
-      backgroundColor: background(`accent.${color}.bold`),
+      color: token('font.text.inverse'),
+      backgroundColor: token(`background.accent.${color}.bold`),
     })
   } else if (color === 'neutral') {
     return css({
-      color: font('text'),
-      backgroundColor: background('accent.neutral.light'),
+      color: token('font.text'),
+      backgroundColor: token('background.accent.neutral'),
     })
   }
 
   return css({
-    color: font('text'),
-    backgroundColor: background(`accent.${color}.lighter`),
+    color: token('font.text'),
+    backgroundColor: token(`background.accent.${color}`),
   })
 }
 

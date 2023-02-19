@@ -1,7 +1,7 @@
-import styled from '@emotion/styled'
-import { background, border, font } from '@pisagor/core/tokens'
+import { css } from '@emotion/css'
+import token from '@pisagor/core/tokens'
 
-export const Root = styled.div({
+export const root = css({
   position: 'relative',
   maxWidth: 600,
   transition: 'width 300ms',
@@ -9,44 +9,34 @@ export const Root = styled.div({
   boxSizing: 'border-box',
 })
 
-export const Search = styled.div({
+export const search = css({
   position: 'relative',
 
   span: {
     position: 'absolute',
-    top: 7,
+    top: '50%',
     left: 8,
-    color: font('subtlest'),
+    color: token('font.subtlest'),
+    transform: 'translateY(-50%)',
   },
 })
 
-export const SearchInput = styled.input({
-  width: '100%',
-  height: 32,
-  padding: '0px 12px 0px 28px',
-  boxSizing: 'border-box',
-  outline: 'none',
-  borderRadius: 5,
-  fontSize: 14,
-  lineHeight: 20,
-  color: font('subtlest'),
-  border: `2px solid ${border('neutral')}`,
-  boxShadow: 'none',
-  backgroundColor: background(),
-
-  ':focus': {
-    boxShadow: `0 0 0 2px ${background('info')}`,
-    borderColor: 'transparent',
+export const searchInput = css({
+  input: {
+    height: 32,
+    padding: '0px 12px 0px 28px',
+    fontSize: 14,
+    lineHeight: 20,
   },
 })
 
-export const SearchResult = styled.div({
+export const searchResult = css({
   position: 'absolute',
   top: '100%',
   left: 0,
   width: '100%',
   boxShadow: '0 4px 8px rgba(9, 30, 66, 0.25), 0 0 1px rgba(9, 30, 66, 0.31)',
-  backgroundColor: background(),
+  backgroundColor: token('background'),
   borderRadius: 3,
   overflow: 'hidden',
   marginTop: 8,

@@ -1,4 +1,4 @@
-html[data-theme="light"] {
+[data-theme="light"] {
   --B100: #E9F2FF;
   --B200: #CCE0FF;
   --B300: #85B8FF;

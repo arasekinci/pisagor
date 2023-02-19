@@ -1,5 +1,4 @@
 import { css } from '@emotion/css'
-// import { background } from '@pisagor/core/tokens'
 
 export const list = css({
   padding: 0,

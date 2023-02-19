@@ -1,5 +1,6 @@
 import React, { useRef, Fragment, useState } from 'react'
 import { classnames } from 'begonya/functions'
+import error from '@pisagor/core/error'
 import Popper from '@pisagor/popper'
 
 import type { TooltipProps } from './tooltip.types'
@@ -28,11 +29,25 @@ const Tooltip: React.FunctionComponent<TooltipProps> = ({
   const renderTrigger = () => {
     if (React.isValidElement(children)) {
       if (React.Children.only(children)) {
-        return React.cloneElement<any>(children, {
+        {
+          /* return React.cloneElement<any>(children, {
           ref: triggerRef,
+          // ref: combineRefs,
           onMouseEnter: handleMouseEnter,
           onMouseLeave: handleMouseLeave,
-        })
+        }) */
+        }
+
+        return (
+          <span
+            className="tooltip"
+            ref={triggerRef}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            {children}
+          </span>
+        )
       }
     }
   }

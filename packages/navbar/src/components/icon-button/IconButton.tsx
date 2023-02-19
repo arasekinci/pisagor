@@ -1,5 +1,5 @@
 import type { IconButtonProps } from './IconButton.types'
-import * as Styled from './IconButton.styles'
+import * as styles from './IconButton.styles'
 
 const IconButton: React.FunctionComponent<IconButtonProps> = ({
   children,
@@ -7,9 +7,14 @@ const IconButton: React.FunctionComponent<IconButtonProps> = ({
   ...rest
 }) => {
   return (
-    <Styled.Root data-testid={testId} type="button" {...rest}>
+    <button
+      className={styles.root}
+      data-testid={testId}
+      type="button"
+      {...rest}
+    >
       {children}
-    </Styled.Root>
+    </button>
   )
 }
 

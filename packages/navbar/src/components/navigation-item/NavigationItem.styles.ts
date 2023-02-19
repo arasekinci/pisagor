@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import { background, font } from '@pisagor/core/tokens'
+import token from '@pisagor/core/tokens'
 
 export const root = css({
   position: 'relative',
@@ -12,7 +12,7 @@ export const root = css({
 })
 
 export const button = css({
-  color: font('subtlest'),
+  color: token('font.subtlest'),
   fontWeight: 500,
   borderRadius: 3,
   height: '2.2857142857142856em',
@@ -20,13 +20,13 @@ export const button = css({
   padding: '0 4px',
 
   '&:hover': {
-    color: font('info'),
-    backgroundColor: background('info.bold'),
+    color: token('font.status.info'),
+    backgroundColor: token('background.status.info.bold'),
   },
 
   '&:focus': {
-    color: font('subtlest'),
-    boxShadow: `0 0 0 2px ${background('info')}`,
+    color: token('font.subtlest'),
+    boxShadow: `0 0 0 2px ${token('background.status.info')}`,
   },
 })
 
@@ -38,12 +38,12 @@ export const selected = css({
     bottom: 0,
     right: 4,
     left: 4,
-    backgroundColor: background('info.bold'),
+    backgroundColor: token('background.status.info.bold'),
     borderTopLeftRadius: 1,
     borderTopRightRadius: 1,
   },
 
   [`.${button}`]: {
-    color: background('info.bold'),
+    color: token('background.status.info.bold'),
   },
 })
