@@ -1,10 +1,10 @@
 {
   "name": "@pisagor/radio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A radio input allows people to select only one option from a number of choices. Radio is generally displayed in a radio group.",
   "keywords": [
-    "pisagor",
     "react",
+    "pisagor",
     "radio"
   ],
   "homepage": "https://arasekinci.github.io/pisagor/components/button",
@@ -23,11 +23,9 @@
     "directory": "packages/radio"
   },
   "scripts": {
-    "build:esm": "tsc --module es2015 --outDir dist/esm",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "build": "yarn build:esm && yarn build:cjs"
-  },
-  "dependencies": {
-    "begonya": "^0.2.3"
+    "build:cjs": "tsc --build tsconfig/commonjs.json",
+    "build:esm": "tsc --build tsconfig/esm.json",
+    "build:esnext": "tsc --build tsconfig/esnext.json",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:esnext"
   }
 }

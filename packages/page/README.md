@@ -2,18 +2,19 @@
 
 ---
 
-A grid system based on the flex display property.
+A collection of components which let you compose an application&#39;s page layout.
 
-The [Page](https://zera-admin.glomil.com/components/page) component from [zera admin packages](https://zera-admin.glomil.com).
+The [page](https://pisagor.com/components/page) component from [pisagor packages](https://pisagor.com).
 
 ## Installation
 
-    yarn add @zera-admin/page
+    yarn add @pisagor/page
 
 ## Import
-
-    import Lonzege from '@zera-admin/page'
+  
+    import Page from '@pisagor/page'
+  
 
 ## Usage
 
-Detailed docs and example usage can be found [here](https://zera-admin.glomil.com/components/page).
+Detailed docs and example usage can be found [here](https://pisagor.com/components/page).

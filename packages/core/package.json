@@ -1,10 +1,10 @@
 {
   "name": "@pisagor/core",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "The Pisagor theme framework.",
   "keywords": [
-    "pisagor",
     "react",
+    "pisagor",
     "core"
   ],
   "homepage": "https://arasekinci.github.io/pisagor/components/core",
@@ -27,7 +27,6 @@
     "lint": "eslint --fix src"
   },
   "dependencies": {
-    "@pisagor/anchor": "^0.1.0",
     "begonya": "^0.2.3"
   },
   "devDependencies": {

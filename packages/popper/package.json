@@ -1,10 +1,10 @@
 {
   "name": "@pisagor/popper",
-  "version": "0.1.0",
-  "description": "Wrapper for react-popper with common config and some helpers",
+  "version": "1.0.0",
+  "description": "Wrapper for react-popper with common config and some helpers.",
   "keywords": [
-    "pisagor",
     "react",
+    "pisagor",
     "popper"
   ],
   "homepage": "https://arasekinci.github.io/pisagor/components/popper",
@@ -23,9 +23,10 @@
     "directory": "packages/popper"
   },
   "scripts": {
-    "build:esm": "tsc --module es2015 --outDir dist/esm",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "build": "yarn build:esm && yarn build:cjs"
+    "build:cjs": "tsc --build tsconfig/commonjs.json",
+    "build:esm": "tsc --build tsconfig/esm.json",
+    "build:esnext": "tsc --build tsconfig/esnext.json",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:esnext"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.5"

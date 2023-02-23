@@ -4,15 +4,16 @@
 
 A collapsible and expandable content area with a brief summary.
 
-The [Accordion](https://pisagor.com/components/accordion) component from [pisagor packages](https://pisagor.com).
+The [accordion](https://pisagor.com/components/accordion) component from [pisagor packages](https://pisagor.com).
 
 ## Installation
 
     yarn add @pisagor/accordion
 
 ## Import
-
+  
     import Accordion, { AccordionItem, AccordionSummary, AccordionDetail } from '@pisagor/accordion'
+  
 
 ## Usage
 

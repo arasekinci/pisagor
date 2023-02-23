@@ -4,15 +4,16 @@
 
 A button triggers an event or action. They let users know what will happen next.
 
-The [Button](https://pisagor.com/components/button) component from [pisagor packages](https://pisagor.com).
+The [button](https://pisagor.com/components/button) component from [pisagor packages](https://pisagor.com).
 
 ## Installation
 
     yarn add @pisagor/button
 
 ## Import
-
+  
     import Button from '@pisagor/button'
+  
 
 ## Usage
 

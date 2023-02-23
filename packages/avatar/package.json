@@ -1,10 +1,10 @@
 {
   "name": "@pisagor/avatar",
-  "version": "0.1.0",
-  "description": "An avatar is a visual representation of a user or entity.",
+  "version": "1.0.0",
+  "description": "A graphical representation of a user: usually a photo, illustration, or initial.",
   "keywords": [
-    "pisagor",
     "react",
+    "pisagor",
     "avatar"
   ],
   "homepage": "https://arasekinci.github.io/pisagor/components/avatar",
@@ -23,8 +23,9 @@
     "directory": "packages/avatar"
   },
   "scripts": {
-    "build:esm": "tsc --module es2015 --outDir dist/esm",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "build": "yarn build:esm && yarn build:cjs"
+    "build:cjs": "tsc --build tsconfig/commonjs.json",
+    "build:esm": "tsc --build tsconfig/esm.json",
+    "build:esnext": "tsc --build tsconfig/esnext.json",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:esnext"
   }
 }

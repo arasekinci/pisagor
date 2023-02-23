@@ -1,5 +1,5 @@
+import fs from 'node:fs'
 import { execSync } from 'child_process'
-import fs from 'fs'
 import gulp from 'gulp'
 import autoprefixer from 'gulp-autoprefixer'
 import cleanCSS from 'gulp-clean-css'
@@ -34,8 +34,13 @@ function generator(tokens: Token[]): string {
 
     try {
       const content = JSON.stringify(token.data, null, 2)
+      const dist = './dist'
 
-      fs.writeFileSync(`./dist/schema/${token.name}.json`, content)
+      if (!fs.existsSync(dist)) {
+        fs.mkdirSync(dist)
+      }
+
+      fs.writeFileSync(`${dist}/schema/${token.name}.json`, content)
     } catch (error) {
       console.log(error)
     }
@@ -71,7 +76,9 @@ async function token() {
     }`
 
   if (!fs.existsSync(schemaDir)) {
-    fs.mkdirSync(schemaDir)
+    fs.mkdirSync(schemaDir, {
+      recursive: true,
+    })
   }
 
   try {
@@ -141,18 +148,12 @@ async function token() {
 
 async function script() {
   execute('yarn lint')
-  execute('tsc --module es2015 --outDir dist/esm')
-  execute('tsc --module commonjs --outDir dist/cjs')
+  execute('tsc --build tsconfig/commonjs.json')
+  execute('tsc --build tsconfig/esm.json')
+  execute('tsc --build tsconfig/esnext.json')
 }
 
 export async function build() {
-  process.argv.forEach((param, index) => {
-    if (index > 2) {
-      const [key, value] = param.replace('--', '').split('=')
-
-      console.log(`2 ${key}=${value}`)
-    }
-  })
   await css()
   await token()
   await script()

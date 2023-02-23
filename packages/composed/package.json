@@ -1,14 +1,11 @@
 {
   "name": "@pisagor/composed",
-  "version": "0.1.0",
-  "description": "A collection of components which let you compose an application's page layout",
+  "version": "1.0.0",
+  "description": "",
   "keywords": [
-    "pisagor",
     "react",
-    "breadcrumbs",
-    "layout",
-    "navbar",
-    "modal"
+    "pisagor",
+    "composed"
   ],
   "homepage": "https://arasekinci.github.io/pisagor/components/hoc",
   "bugs": "https://github.com/arasekinci/pisagor/issues",
@@ -23,13 +20,9 @@
     "directory": "packages/hoc"
   },
   "scripts": {
-    "build:esm": "tsc --module es2015 --outDir dist/esm",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "build": "yarn build:esm && yarn build:cjs"
-  },
-  "dependencies": {
-    "@pisagor/breadcrumbs": "^0.1.0",
-    "@pisagor/layout": "^0.1.0",
-    "@pisagor/navbar": "^0.1.0"
+    "build:cjs": "tsc --build tsconfig/commonjs.json",
+    "build:esm": "tsc --build tsconfig/esm.json",
+    "build:esnext": "tsc --build tsconfig/esnext.json",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:esnext"
   }
 }

@@ -1,19 +1,20 @@
-# Page &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
+# Menu &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 
 ---
 
-A grid system based on the flex display property.
+A collection of composable menu components that can be used anywhere.
 
-The [Page](https://zera-admin.glomil.com/components/page) component from [zera admin packages](https://zera-admin.glomil.com).
+The [menu](https://pisagor.com/components/menu) component from [pisagor packages](https://pisagor.com).
 
 ## Installation
 
-    yarn add @zera-admin/page
+    yarn add @pisagor/menu
 
 ## Import
-
-    import Lonzege from '@zera-admin/page'
+  
+    import Menu from '@pisagor/menu'
+  
 
 ## Usage
 
-Detailed docs and example usage can be found [here](https://zera-admin.glomil.com/components/page).
+Detailed docs and example usage can be found [here](https://pisagor.com/components/menu).

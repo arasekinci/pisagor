@@ -4,15 +4,16 @@
 
 A section message is used to alert users to a particular section of the screen.
 
-The [Alert](https://pisagor.com/components/alert) component from [pisagor packages](https://pisagor.com).
+The [alert](https://pisagor.com/components/alert) component from [pisagor packages](https://pisagor.com).
 
 ## Installation
 
     yarn add @pisagor/alert
 
 ## Import
-
+  
     import Alert from '@pisagor/alert'
+  
 
 ## Usage
 

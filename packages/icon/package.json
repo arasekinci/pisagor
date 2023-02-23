@@ -1,10 +1,10 @@
 {
   "name": "@pisagor/icon",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "An icon is a visual representation of a command, device, directory, or common action.",
   "keywords": [
-    "pisagor",
     "react",
+    "pisagor",
     "icon"
   ],
   "homepage": "https://arasekinci.github.io/pisagor/components/icon",
@@ -23,8 +23,9 @@
     "directory": "packages/icon"
   },
   "scripts": {
-    "build:esm": "tsc --module es2015 --outDir dist/esm",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "build": "yarn build:esm && yarn build:cjs"
+    "build:cjs": "tsc --build tsconfig/commonjs.json",
+    "build:esm": "tsc --build tsconfig/esm.json",
+    "build:esnext": "tsc --build tsconfig/esnext.json",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:esnext"
   }
 }
