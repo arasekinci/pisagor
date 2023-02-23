@@ -1,5 +1,5 @@
 {
-  "name": "task",
+  "name": "gulp",
   "version": "1.0.0",
   "description": "Packages do task management.",
   "scripts": {

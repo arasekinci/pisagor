@@ -4,12 +4,12 @@ import ejs from 'ejs'
 
 import { components } from './shared/packages'
 
-function template2(name: string) {
+function template(name: string) {
   return fs.readFileSync(path.join('./templates', `${name}.ejs`), 'utf8')
 }
 
 async function createNodeFile() {
-  const template = fs.readFileSync('./templates/npmignore.ejs', 'utf8')
+  const content = template('npmignore')
 
   for (const component of components) {
     const pgkPath = `../packages/${component.name}/package.json`
@@ -19,26 +19,26 @@ async function createNodeFile() {
     config.keywords = ['react', 'pisagor', component.name]
 
     fs.writeFileSync(pgkPath, JSON.stringify(config, null, 2))
-    fs.writeFileSync(`../packages/${component.name}/.npmignore`, template)
+    fs.writeFileSync(`../packages/${component.name}/.npmignore`, content)
   }
 }
 
 async function createLicenceFile() {
-  const template = fs.readFileSync('./templates/license.ejs', 'utf8')
+  const content = template('license')
 
   for (const component of components) {
     const path = `../packages/${component.name}/LICENSE`
 
-    fs.writeFileSync(path, template)
+    fs.writeFileSync(path, content)
   }
 }
 
 async function createReadmeFile() {
-  const template = fs.readFileSync('./templates/readme.ejs', 'utf8')
+  const content = template('readme')
 
   for (const component of components) {
     const path = `../packages/${component.name}/README.md`
-    const data = ejs.render(template, {
+    const data = ejs.render(content, {
       name: component.name,
       namespace: component.namespace,
       description: component.description,
@@ -50,10 +50,10 @@ async function createReadmeFile() {
 }
 
 async function createTypeScriptConfigFile() {
-  const config = template2('tsconfig')
-  const commonjs = template2('tsconfig/commonjs')
-  const esm = template2('tsconfig/esm')
-  const esnext = template2('tsconfig/esnext')
+  const config = template('tsconfig')
+  const commonjs = template('tsconfig/commonjs')
+  const esm = template('tsconfig/esm')
+  const esnext = template('tsconfig/esnext')
 
   for (const component of components) {
     const root = `../packages/${component.name}`

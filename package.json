@@ -38,6 +38,7 @@
   },
   "workspaces": [
     "packages/*",
+    "gulp",
     "docs"
   ],
   "private": true

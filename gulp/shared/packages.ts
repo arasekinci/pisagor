@@ -2,6 +2,32 @@ import type { Component } from './types'
 
 export const components: Component[] = [
   {
+    namespace: 'Core',
+    name: 'core',
+    description: 'The Pisagor theme framework.',
+  },
+  {
+    namespace: 'Anchor',
+    name: 'anchor',
+    description: '',
+  },
+  {
+    namespace: 'Icon',
+    name: 'icon',
+    description:
+      'An icon is a visual representation of a command, device, directory, or common action.',
+  },
+  {
+    namespace: 'Portal',
+    name: 'portal',
+    description: 'Pisagor wrapper for rendering components in React portals.',
+  },
+  {
+    namespace: 'Cormorant',
+    name: 'cormorant',
+    description: '',
+  },
+  {
     namespace: 'Accordion',
     name: 'accordion',
     description:
@@ -15,18 +41,13 @@ export const components: Component[] = [
       'A section message is used to alert users to a particular section of the screen.',
   },
   {
-    namespace: 'Anchor',
-    name: 'anchor',
-    description: '',
-  },
-  {
     namespace: 'Avatar',
     name: 'avatar',
     description:
       'A graphical representation of a user: usually a photo, illustration, or initial.',
   },
   {
-    namespace: 'Avatar',
+    namespace: 'Badge',
     name: 'badge',
     description:
       'A badge is a visual indicator for numeric values such as tallies and scores.',
@@ -50,25 +71,15 @@ export const components: Component[] = [
       'A button triggers an event or action. They let users know what will happen next.',
   },
   {
+    namespace: 'Form',
+    name: 'form',
+    description: 'A form allows users to input information.',
+  },
+  {
     namespace: 'Checkbox',
     name: 'checkbox',
     description:
       'A checkbox is an input control that allows a user to select one or more options from a number of choices.',
-  },
-  {
-    namespace: 'Composed',
-    name: 'composed',
-    description: '',
-  },
-  {
-    namespace: 'Core',
-    name: 'core',
-    description: 'The Pisagor theme framework.',
-  },
-  {
-    namespace: 'Cormorant',
-    name: 'cormorant',
-    description: '',
   },
   {
     namespace: 'Drawer',
@@ -82,21 +93,10 @@ export const components: Component[] = [
     description: '',
   },
   {
-    namespace: 'Form',
-    name: 'form',
-    description: 'A form allows users to input information.',
-  },
-  {
     namespace: 'Gridview',
     name: 'gridview',
     description:
       'A component for building page layouts. Also includes the Grid and GridColumn components.',
-  },
-  {
-    namespace: 'Icon',
-    name: 'icon',
-    description:
-      'An icon is a visual representation of a command, device, directory, or common action.',
   },
   {
     namespace: 'Input',
@@ -139,11 +139,6 @@ export const components: Component[] = [
     description: 'A popup displays brief content in an overlay.',
   },
   {
-    namespace: 'Portal',
-    name: 'portal',
-    description: 'Pisagor wrapper for rendering components in React portals.',
-  },
-  {
     namespace: 'Radio',
     name: 'radio',
     description:
@@ -166,5 +161,10 @@ export const components: Component[] = [
     name: 'tooltip',
     description:
       'A tooltip is a floating, non-actionable label used to explain a user interface element or feature.',
+  },
+  {
+    namespace: 'Composed',
+    name: 'composed',
+    description: '',
   },
 ]
