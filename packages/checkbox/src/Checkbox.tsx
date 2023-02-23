@@ -3,8 +3,8 @@ import { classnames } from 'begonya/functions'
 import { Label } from '@pisagor/form'
 
 import { sizes } from './core/constants'
-import type { CheckboxProps } from './Checkbox.types'
-import * as styles from './Checkbox.styles'
+import type { CheckboxProps } from './checkbox.types'
+import * as styles from './checkbox.styles'
 
 const Checkbox: React.ForwardRefRenderFunction<
   HTMLInputElement,

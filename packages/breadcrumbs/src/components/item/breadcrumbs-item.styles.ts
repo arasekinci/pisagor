@@ -1,4 +1,5 @@
 import { css } from '@emotion/css'
+import token from '@pisagor/core/tokens'
 
 export const root = css({
   position: 'relative',
@@ -6,7 +7,7 @@ export const root = css({
 })
 
 export const anchor = css({
-  color: 'var(--breadcrumbs-color)',
+  color: token('font.subtlest'),
   whiteSpace: 'nowrap',
   display: 'flex',
   gap: 8,
@@ -16,7 +17,7 @@ export const anchor = css({
   textDecoration: 'none !important',
 
   ':hover': {
-    color: 'var(--breadcrumbs-color-hover)',
+    color: token('font.text'),
   },
 })
 

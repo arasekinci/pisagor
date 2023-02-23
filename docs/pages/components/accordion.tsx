@@ -19,33 +19,96 @@ const AccordionPage: NextPage = () => {
       <Example>
         <Accordion id="accordion">
           <AccordionItem>
-            <AccordionSummary>Accordion Header 1</AccordionSummary>
+            <AccordionSummary>Accordion Summary 1</AccordionSummary>
             <AccordionDetail>
-              <div>Accordion Panel 1</div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+                ut perferendis impedit asperiores non repellat culpa in quas
+                nemo, earum voluptatem reiciendis sapiente possimus officiis
+                nostrum unde doloribus voluptates? Soluta?
+              </p>
             </AccordionDetail>
           </AccordionItem>
           <AccordionItem>
-            <AccordionSummary>Accordion Header 2</AccordionSummary>
+            <AccordionSummary>Accordion Summary 2</AccordionSummary>
             <AccordionDetail>
-              <div>Accordion Panel 2</div>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati quis eos nemo quaerat a quasi optio doloremque
+                officiis, quo rem modi ex consectetur aliquid corporis unde
+                assumenda hic excepturi quos.
+              </div>
             </AccordionDetail>
           </AccordionItem>
           <AccordionItem>
-            <AccordionSummary>Accordion Header 3</AccordionSummary>
+            <AccordionSummary>Accordion Summary 3</AccordionSummary>
             <AccordionDetail>
-              <div>Accordion Panel 3</div>
+              <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate totam eos unde aperiam laboriosam enim libero impedit
+                sit, quae aut excepturi pariatur iure fuga animi soluta
+                reiciendis incidunt possimus asperiores?
+              </div>
             </AccordionDetail>
           </AccordionItem>
           <AccordionItem>
-            <AccordionSummary>Accordion Header 4</AccordionSummary>
+            <AccordionSummary>Accordion Summary 4</AccordionSummary>
             <AccordionDetail>
-              <div>Accordion Panel 4</div>
+              <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+                cum porro autem at dignissimos sint dolor tenetur vitae, vero
+                quam eveniet nihil quisquam ducimus sit, veritatis amet dolorem
+                molestiae possimus.
+              </div>
+            </AccordionDetail>
+          </AccordionItem>
+        </Accordion>
+      </Example>
+      <h3>Collapse</h3>
+      <Example>
+        <Accordion id="collapse" collapse>
+          <AccordionItem>
+            <AccordionSummary>Accordion Summary 1</AccordionSummary>
+            <AccordionDetail>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+                ut perferendis impedit asperiores non repellat culpa in quas
+                nemo, earum voluptatem reiciendis sapiente possimus officiis
+                nostrum unde doloribus voluptates? Soluta?
+              </p>
             </AccordionDetail>
           </AccordionItem>
           <AccordionItem>
-            <AccordionSummary>Accordion Header 5</AccordionSummary>
+            <AccordionSummary>Accordion Summary 2</AccordionSummary>
             <AccordionDetail>
-              <div>Accordion Panel 5</div>
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati quis eos nemo quaerat a quasi optio doloremque
+                officiis, quo rem modi ex consectetur aliquid corporis unde
+                assumenda hic excepturi quos.
+              </div>
+            </AccordionDetail>
+          </AccordionItem>
+          <AccordionItem>
+            <AccordionSummary>Accordion Summary 3</AccordionSummary>
+            <AccordionDetail>
+              <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate totam eos unde aperiam laboriosam enim libero impedit
+                sit, quae aut excepturi pariatur iure fuga animi soluta
+                reiciendis incidunt possimus asperiores?
+              </div>
+            </AccordionDetail>
+          </AccordionItem>
+          <AccordionItem>
+            <AccordionSummary>Accordion Summary 4</AccordionSummary>
+            <AccordionDetail>
+              <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+                cum porro autem at dignissimos sint dolor tenetur vitae, vero
+                quam eveniet nihil quisquam ducimus sit, veritatis amet dolorem
+                molestiae possimus.
+              </div>
             </AccordionDetail>
           </AccordionItem>
         </Accordion>

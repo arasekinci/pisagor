@@ -4,7 +4,7 @@ import * as colors from '../../colors'
 const background: Token[] = [
   {
     name: 'background.accent.neutral',
-    value: colors.N200,
+    value: colors.N100,
     attributes: {
       group: 'background',
       state: 'on',
@@ -13,7 +13,7 @@ const background: Token[] = [
   },
   {
     name: 'background.accent.neutral.hover',
-    value: colors.N300,
+    value: colors.N200,
     attributes: {
       group: 'background',
       state: 'hover',
@@ -22,7 +22,7 @@ const background: Token[] = [
   },
   {
     name: 'background.accent.neutral.active',
-    value: colors.N400,
+    value: colors.N300,
     attributes: {
       group: 'background',
       state: 'active',

@@ -9,5 +9,12 @@ export const root = css({
   justifyContent: 'space-between',
   padding: '10px 16px',
   backgroundColor: token('background.accent.neutral'),
-  border: `1px solid ${token('border')}`,
+
+  ':hover': {
+    backgroundColor: token('background.accent.neutral.hover'),
+  },
+
+  ':active': {
+    backgroundColor: token('background.accent.neutral.active'),
+  },
 })

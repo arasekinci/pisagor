@@ -1,6 +1,5 @@
 import React, { useRef, Fragment, useState } from 'react'
 import { classnames } from 'begonya/functions'
-import error from '@pisagor/core/error'
 import Popper from '@pisagor/popper'
 
 import type { TooltipProps } from './tooltip.types'

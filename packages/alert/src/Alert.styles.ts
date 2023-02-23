@@ -9,11 +9,6 @@ export const appearance = (color: AlertColor, accent: boolean) => {
       color: token('font.text.inverse'),
       backgroundColor: token(`background.accent.${color}.bold`),
     })
-  } else if (color === 'neutral') {
-    return css({
-      color: token('font.text'),
-      backgroundColor: token('background.accent.neutral'),
-    })
   }
 
   return css({

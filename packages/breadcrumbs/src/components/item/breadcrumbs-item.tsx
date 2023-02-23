@@ -1,8 +1,8 @@
 import { classnames } from 'begonya/functions'
 import Anchor from '@pisagor/anchor'
 
-import type { BreadcrumbsItemProps } from './BreadcrumbsItem.types'
-import * as styles from './BreadcrumbsItem.styles'
+import type { BreadcrumbsItemProps } from './breadcrumbs-item.types'
+import * as styles from './breadcrumbs-item.styles'
 
 export const BreadcrumbsItem: React.FunctionComponent<BreadcrumbsItemProps> = ({
   children,

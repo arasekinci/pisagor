@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { classnames } from 'begonya/functions'
 import { convertStatusNameToColor } from '@pisagor/core/themes'
 import type { IconProps } from '@pisagor/icon'
@@ -11,25 +11,46 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
     accent = true,
     children,
     className,
-    color = 'default',
+    color = 'neutral',
     icon,
     iconAfter,
     iconBefore,
     size = 'medium',
     status,
     testId,
+    onMouseDown,
+    onMouseLeave,
+    onMouseUp,
     ...rest
   },
   ref
 ) => {
-  const appearance =
-    color === 'default' ? 'default' : convertStatusNameToColor(color, status)
+  const [pressed, setPressed] = useState<boolean>(false)
+  const appearance = convertStatusNameToColor(color, status)
   const classNames = classnames(
     styles.root,
     styles.appearance(appearance, accent),
     styles.size[size],
     className
   )
+
+  const handleMouseDown = (event: React.MouseEvent<HTMLButtonElement>) => {
+    onMouseDown && onMouseDown(event)
+
+    setPressed(true)
+  }
+
+  const handleMouseLeave = (event: React.MouseEvent<HTMLButtonElement>) => {
+    onMouseLeave && onMouseLeave(event)
+
+    setPressed(false)
+  }
+
+  const handleMouseUp = (event: React.MouseEvent<HTMLButtonElement>) => {
+    onMouseUp && onMouseUp(event)
+
+    setPressed(false)
+  }
 
   const renderIcon = (elem?: React.ReactElement<IconProps>) => {
     const sizes = {
@@ -46,7 +67,16 @@ const Button: React.ForwardRefRenderFunction<HTMLButtonElement, ButtonProps> = (
   }
 
   return (
-    <button className={classNames} ref={ref} data-testid={testId} {...rest}>
+    <button
+      ref={ref}
+      className={classNames}
+      aria-pressed={pressed}
+      data-testid={testId}
+      onMouseDown={handleMouseDown}
+      onMouseLeave={handleMouseLeave}
+      onMouseUp={handleMouseUp}
+      {...rest}
+    >
       {renderIcon(iconBefore)}
       {renderIcon(icon)}
       {children && <span className={styles.text}>{children}</span>}

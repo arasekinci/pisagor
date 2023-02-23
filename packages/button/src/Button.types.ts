@@ -2,7 +2,7 @@ import type { ButtonHTMLAttributes, ReactElement } from 'react'
 import type { Color, Status } from '@pisagor/core'
 import type { IconProps } from '@pisagor/icon'
 
-export type ButtonColor = Color | 'default'
+export type ButtonColor = Color
 
 export type ButtonStatus = Status
 

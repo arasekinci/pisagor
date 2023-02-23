@@ -4,17 +4,18 @@ import token, { palette } from '@pisagor/core/tokens'
 import type { ButtonColor } from './button.types'
 
 export const appearance = (color: ButtonColor, accent: boolean) => {
-  if (color === 'default') {
+  if (color === 'neutral') {
     return css({
       color: token('font.text'),
-      backgroundColor: palette(`neutral.200.alpha`),
+      backgroundColor: palette(`neutral.200`),
 
       ':hover': {
-        backgroundColor: palette(`neutral.300.alpha`),
+        backgroundColor: palette(`neutral.100`),
       },
 
       ':active': {
-        backgroundColor: palette(`neutral.400.alpha`),
+        color: token(`font.accent.blue`),
+        backgroundColor: palette(`blue.100`),
       },
     })
   }

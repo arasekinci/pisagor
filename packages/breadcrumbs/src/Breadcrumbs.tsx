@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import { classnames } from 'begonya/functions'
 
-import type { BreadcrumbsProps } from './Breadcrumbs.types'
-import * as styles from './Breadcrumbs.styles'
+import type { BreadcrumbsProps } from './breadcrumbs.types'
+import * as styles from './breadcrumbs.styles'
 
 const Breadcrumbs: React.FunctionComponent<BreadcrumbsProps> = ({
   children,

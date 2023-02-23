@@ -1,6 +1,0 @@
-{
-  "name": "@pisagor/core/error",
-  "types": "../dist/@types/error/index.d.ts",
-  "main": "../dist/cjs/error/index.js",
-  "module": "../dist/esm/error/index.js"
-}

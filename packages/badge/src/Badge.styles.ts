@@ -1,5 +1,5 @@
 import { css } from '@emotion/css'
-import token, { palette } from '@pisagor/core/tokens'
+import token from '@pisagor/core/tokens'
 
 import type { BadgeColor } from './badge.types'
 
@@ -8,11 +8,6 @@ export const appearance = (color: BadgeColor, accent: boolean) => {
     return css({
       color: token('font.text.inverse'),
       backgroundColor: token(`background.accent.${color}.bold`),
-    })
-  } else if (color === 'neutral') {
-    return css({
-      color: token('font.text'),
-      backgroundColor: palette('neutral.300'),
     })
   }
 

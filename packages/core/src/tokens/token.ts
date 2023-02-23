@@ -7,9 +7,9 @@
 import { TOKEN_NOT_FOUND } from '../constants'
 
 const tokens = {
-  'background.accent.neutral': 'var(--N200)',
-  'background.accent.neutral.hover': 'var(--N300)',
-  'background.accent.neutral.active': 'var(--N400)',
+  'background.accent.neutral': 'var(--N100)',
+  'background.accent.neutral.hover': 'var(--N200)',
+  'background.accent.neutral.active': 'var(--N300)',
   'background.accent.neutral.bold': 'var(--N800)',
   'background.accent.neutral.bold.hover': 'var(--N900)',
   'background.accent.neutral.bold.active': 'var(--N1000)',
