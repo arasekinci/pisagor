@@ -7,8 +7,8 @@
     "react",
     "navbar"
   ],
-  "homepage": "https://github.com/tingoon/pisagor/packages/navbar/#readme",
-  "bugs": "https://github.com/tingoon/pisagor/issues",
+  "homepage": "https://arasekinci.github.io/pisagor/components/navbar",
+  "bugs": "https://github.com/arasekinci/pisagor/issues",
   "license": "MIT",
   "author": "Tingoon",
   "maintainers": [
@@ -19,7 +19,7 @@
   "module": "dist/esm/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tingoon/pisagor.git",
+    "url": "https://github.com/arasekinci/pisagor.git",
     "directory": "packages/navbar"
   },
   "scripts": {
@@ -27,5 +27,10 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "build": "yarn build:esm && yarn build:cjs"
   },
-  "private": false
+  "dependencies": {
+    "@pisagor/anchor": "^0.1.0",
+    "@pisagor/button": "^0.1.0",
+    "@pisagor/icon": "^0.1.0",
+    "@pisagor/input": "^0.1.0"
+  }
 }

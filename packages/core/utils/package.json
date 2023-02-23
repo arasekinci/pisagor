@@ -1,6 +1,0 @@
-{
-  "name": "@pisagor/core/utils",
-  "types": "../dist/@types/utils/index.d.ts",
-  "main": "../dist/cjs/utils/index.js",
-  "module": "../dist/esm/utils/index.js"
-}

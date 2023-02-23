@@ -7,8 +7,8 @@
     "react",
     "textarea"
   ],
-  "homepage": "https://github.com/tingoon/pisagor/packages/textarea/#readme",
-  "bugs": "https://github.com/tingoon/pisagor/issues",
+  "homepage": "https://arasekinci.github.io/pisagor/components/textarea",
+  "bugs": "https://github.com/arasekinci/pisagor/issues",
   "license": "MIT",
   "author": "Tingoon",
   "maintainers": [
@@ -19,7 +19,7 @@
   "module": "dist/esm/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tingoon/pisagor.git",
+    "url": "https://github.com/arasekinci/pisagor.git",
     "directory": "packages/textarea"
   },
   "scripts": {
@@ -27,5 +27,7 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "build": "yarn build:esm && yarn build:cjs"
   },
-  "private": false
+  "dependencies": {
+    "@pisagor/form": "^0.1.0"
+  }
 }

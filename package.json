@@ -6,7 +6,7 @@
     "docs:start": "yarn workspace docs start",
     "docs:lint": "yarn workspace docs lint",
     "packages:dev": "yarn run nx graph",
-    "packages:build": "yarn lerna run build",
+    "packages:build": "yarn lerna run build --scope=@pisagor/*",
     "packages:lint": "yarn eslint packages/* --ext .ts,.tsx",
     "dev": "yarn docs:dev",
     "build": "yarn packages:build && yarn docs:build",

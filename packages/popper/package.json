@@ -7,8 +7,8 @@
     "react",
     "popper"
   ],
-  "homepage": "https://github.com/tingoon/pisagor/packages/popper/#readme",
-  "bugs": "https://github.com/tingoon/pisagor/issues",
+  "homepage": "https://arasekinci.github.io/pisagor/components/popper",
+  "bugs": "https://github.com/arasekinci/pisagor/issues",
   "license": "MIT",
   "author": "Tingoon",
   "maintainers": [
@@ -19,7 +19,7 @@
   "module": "dist/esm/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tingoon/pisagor.git",
+    "url": "https://github.com/arasekinci/pisagor.git",
     "directory": "packages/popper"
   },
   "scripts": {
@@ -27,7 +27,6 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "build": "yarn build:esm && yarn build:cjs"
   },
-  "private": false,
   "dependencies": {
     "@popperjs/core": "^2.11.5"
   }

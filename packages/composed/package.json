@@ -10,8 +10,8 @@
     "navbar",
     "modal"
   ],
-  "homepage": "https://github.com/tingoon/pisagor/packages/hoc/#readme",
-  "bugs": "https://github.com/tingoon/pisagor/issues",
+  "homepage": "https://arasekinci.github.io/pisagor/components/hoc",
+  "bugs": "https://github.com/arasekinci/pisagor/issues",
   "license": "MIT",
   "author": "Tingoon",
   "maintainers": [
@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tingoon/pisagor.git",
+    "url": "https://github.com/arasekinci/pisagor.git",
     "directory": "packages/hoc"
   },
   "scripts": {
@@ -27,5 +27,9 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "build": "yarn build:esm && yarn build:cjs"
   },
-  "private": false
+  "dependencies": {
+    "@pisagor/breadcrumbs": "^0.1.0",
+    "@pisagor/layout": "^0.1.0",
+    "@pisagor/navbar": "^0.1.0"
+  }
 }
