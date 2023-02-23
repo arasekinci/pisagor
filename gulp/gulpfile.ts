@@ -1,5 +1,7 @@
+import { execSync } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
+import chalk from 'chalk'
 import ejs from 'ejs'
 
 import { components } from './shared/packages'
@@ -75,4 +77,32 @@ export async function build() {
   await createLicenceFile()
   await createReadmeFile()
   await createTypeScriptConfigFile()
+}
+
+export async function setup() {
+  for (const component of components) {
+    try {
+      execSync(`cd ../packages/${component.name} && yarn build`)
+
+      console.log(
+        chalk.green(
+          `[✓] @pisagor/${component.name} package compiled successfully`
+        )
+      )
+    } catch (error) {
+      console.log(
+        chalk.red(`[x] problem compiling @pisagor/${component.name} package`)
+      )
+    }
+  }
+
+  try {
+    execSync('cd ../docs && yarn build')
+
+    console.log(chalk.green(`[✓] documentation compiled successfully`))
+  } catch (error) {
+    console.log(
+      chalk.red('[x] documentation could not be compiled due to some errors')
+    )
+  }
 }
