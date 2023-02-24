@@ -9,9 +9,11 @@
   "license": "ISC",
   "devDependencies": {
     "@types/ejs": "^3.1.2",
-    "@types/gulp": "^4.0.10",
-    "chalk": "^5.2.0",
+    "@types/gulp": "^4.0.10"
+  },
+  "dependencies": {
     "ejs": "^3.1.8",
+    "fs": "^0.0.1-security",
     "gulp": "^4.0.2"
   }
 }

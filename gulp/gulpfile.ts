@@ -1,7 +1,6 @@
 import { execSync } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
-import chalk from 'chalk'
 import ejs from 'ejs'
 
 import { components } from './shared/packages'
@@ -85,24 +84,18 @@ export async function setup() {
       execSync(`cd ../packages/${component.name} && yarn build`)
 
       console.log(
-        chalk.green(
-          `[✓] @pisagor/${component.name} package compiled successfully`
-        )
+        `[✓] @pisagor/${component.name} package compiled successfully`
       )
     } catch (error) {
-      console.log(
-        chalk.red(`[x] problem compiling @pisagor/${component.name} package`)
-      )
+      console.log(`[x] problem compiling @pisagor/${component.name} package`)
     }
   }
 
   try {
     execSync('cd ../docs && yarn build')
 
-    console.log(chalk.green(`[✓] documentation compiled successfully`))
+    console.log(`[✓] documentation compiled successfully`)
   } catch (error) {
-    console.log(
-      chalk.red('[x] documentation could not be compiled due to some errors')
-    )
+    console.log('[x] documentation could not be compiled due to some errors')
   }
 }
